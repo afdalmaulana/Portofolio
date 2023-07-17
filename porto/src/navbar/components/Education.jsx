@@ -1,4 +1,5 @@
 import { Button } from "@chakra-ui/react";
+import Hamburger from "./hamburger";
 
 export default function Education() {
   return (
@@ -6,10 +7,15 @@ export default function Education() {
       <Button
         mt={"10px"}
         mr={"10px"}
-        colorScheme="white"
-        w={{ base: "25px", md: "75px", lg: "100px" }}
+        colorScheme={"blac"}
+        w={{
+          base: `${(<Hamburger />)}`,
+          md: `${(<Hamburger />)}`,
+          lg: "100px",
+        }}
         fontSize={{ base: "8px", md: "12px", lg: "15px" }}
         color={"gray"}
+        variant={"ghost"}
       >
         Education
       </Button>

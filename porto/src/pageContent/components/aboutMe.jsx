@@ -1,9 +1,22 @@
-import { Box, Button, Grid, GridItem, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Grid,
+  GridItem,
+  Image,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
+import Skills from "./skills";
 
 export default function AboutMe() {
   return (
     <>
-      <Box bgColor={"#d8ccbe"} h={"600px"}>
+      <Box
+        bgColor={"#d8ccbe"}
+        h={{ base: "550px", md: "650px", lg: "750px", xl: "800px" }}
+      >
         <Stack ml={"100px"}>
           <Text id="about" color={"#60574c"} fontSize={"32px"} mt={"64px"}>
             A bit about me
@@ -11,8 +24,16 @@ export default function AboutMe() {
           <Text color={"black"} fontSize={"64"}>
             Who am I ?
           </Text>
-          <Box w={"1200px"}>
-            <Text align={"justify"}>
+          {/* <Box
+            bgColor={"green"}
+            w={{ base: "200px", md: "650px", lg: "800px", xl: "1200px" }}
+            h={{ base: "20px", md: "50px", lg: "200px", xl: "150px" }}
+          > */}
+          <Box ml={{ md: 2 }} mr={{ base: 100, md: 100, lg: 100 }}>
+            <Text
+              align={"justify"}
+              fontSize={{ base: "10px", md: "12px", lg: "20px" }}
+            >
               Graduated from the Indonesian Muslim University Makassar majoring
               in Informatics Engineering with a Bachelor of Computer (S.Kom)
               degree and Microsoft Technology Associate (MTA) with a GPA of 3.51
@@ -26,15 +47,13 @@ export default function AboutMe() {
               want to keep learning
             </Text>
           </Box>
-          <Grid templateColumns="repeat(4, 1fr)" mt={"20px"} gap={1}>
-            <GridItem w={'200px'} h={'200px'} bg={'gray'}></GridItem>
-            <GridItem w={'200px'} h={'200px'} bg={'gray'}></GridItem>
-            <GridItem w={'200px'} h={'200px'} bg={'gray'}></GridItem>
-            <GridItem w={'200px'} h={'200px'} bg={'gray'}></GridItem>
-            {/* <GridItem w="250px" h="200" bg="blue.500"></GridItem>
-            <GridItem w="250px" h="200" bg="blue.500"></GridItem>
-            <GridItem w="250px" h="200" bg="blue.500"></GridItem> */}
-          </Grid>
+          {/* </Box> */}
+          <Text id="about" color={"#60574c"} fontSize={"32px"} mt={"64px"}>
+            Skills
+          </Text>
+          <Box>
+            <Skills />
+          </Box>
         </Stack>
       </Box>
     </>

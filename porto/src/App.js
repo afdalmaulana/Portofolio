@@ -8,6 +8,7 @@ import Home from './Landing/Home';
 function App() {
   return (
     <>
+    <Navbar/>
     <Routes>
     <Route path='/' element={<Home/>}></Route>
     </Routes>

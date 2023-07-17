@@ -4,8 +4,8 @@ export default function Banner() {
   return (
     <>
       <Box bgColor={"#d8ccbe"} h={"720px"}>
-        <Stack>
-          <Box mt={'32px'} ml={'100px'} color={'black'}>
+        <Stack mt={'60px'}>
+          <Box mt={'100px'} ml={'100px'} color={'black'}>
             <Text fontSize={"30px"}>
               Hello, I'm
             </Text>
