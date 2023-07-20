@@ -4,6 +4,7 @@ import { Box, Image, Link, Text } from '@chakra-ui/react';
 import Navbar from './navbar/navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Landing/Home';
+import Timer from './pageContent/components/Project3';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Navbar/>
     <Routes>
     <Route path='/' element={<Home/>}></Route>
+    <Route path='/timer' element={<Timer/>}></Route>
     </Routes>
     </>
   );

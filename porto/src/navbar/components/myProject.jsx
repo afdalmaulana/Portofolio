@@ -1,9 +1,11 @@
 import { Box, Button } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 
 export default function MyProject() {
   return (
     <>
       <Box>
+        <Link to="project" smooth={true}>
         <Button
           mt={"10px"}
           mr={"10px"}
@@ -15,6 +17,7 @@ export default function MyProject() {
         >
           My Project
         </Button>
+        </Link>
       </Box>
     </>
   );
