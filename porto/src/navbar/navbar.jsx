@@ -3,6 +3,7 @@ import Education from "./components/Education";
 import Title from "./components/title";
 import AboutMe from "./components/buttonAboutMe";
 import MyProject from "./components/myProject";
+import Hamburger from "./components/hamburger";
 
 export default function Navbar() {
   return (
@@ -23,6 +24,7 @@ export default function Navbar() {
             <AboutMe />
             <Education />
             <MyProject />
+            <Hamburger />
           </ButtonGroup>
         </Flex>
       </Box>

@@ -35,7 +35,7 @@ export default function MyEducation() {
                 </Stack>
               </Box>
               <Box mr={"200px"}>
-                <Fade direction="down">
+                <Fade cascade direction="down">
                   <Text color={"#8e7f6e"} fontSize={"24px"} mt={"80px"}>
                     Bootcamp
                   </Text>
@@ -45,7 +45,9 @@ export default function MyEducation() {
                   <Text fontSize={"16px"} mt={"20px"} color={"white"}>
                     May, 2023 - August 2023
                   </Text>
-                  <Stack fontSize={"16px"} color={"white"} mt={"20px"}>
+                </Fade>
+                <Stack fontSize={"16px"} color={"white"} mt={"20px"}>
+                  <Fade direction="up" cascade>
                     <Text>
                       Modul 01 - Programming Fundamental & Data Structure and
                       Algorithm
@@ -56,8 +58,8 @@ export default function MyEducation() {
                       Modul 04 - Real Project Application & Project Management
                     </Text>
                     <Text>Final Project Bootcamp</Text>
-                  </Stack>
-                </Fade>
+                  </Fade>
+                </Stack>
               </Box>
             </Fade>
           </Flex>
