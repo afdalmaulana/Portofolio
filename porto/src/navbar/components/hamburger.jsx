@@ -42,20 +42,51 @@ export default function Hamburger() {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent bgColor={"#292e33"} w={"10px"} ml={"20px"}>
+        <DrawerContent bgColor={"#d8ccbe"} w={"10px"} ml={"20px"}>
           <DrawerCloseButton />
           <DrawerBody>
             <Link to="about" smooth={true}>
               <Box>
                 <Button
-                  mt={"10px"}
+                  mt={"50px"}
                   mr={"10px"}
-                  colorScheme="green"
-                  w={"200px"}
+                  colorScheme="#292e33"
+                  w={"280px"}
                   fontSize={"20px"}
-                  color={"white"}
+                  color={"black"}
+                  onClick={onClose}
                 >
                   About
+                </Button>
+              </Box>
+            </Link>
+            <Link to="education" smooth={true}>
+              <Box>
+                <Button
+                  mt={"10px"}
+                  mr={"10px"}
+                  colorScheme="#292e33"
+                  w={"280px"}
+                  fontSize={"20px"}
+                  color={"black"}
+                  onClick={onClose}
+                >
+                  Education
+                </Button>
+              </Box>
+            </Link>
+            <Link to="project" smooth={true}>
+              <Box>
+                <Button
+                  mt={"10px"}
+                  mr={"10px"}
+                  colorScheme="#292e33"
+                  w={"280px"}
+                  fontSize={"20px"}
+                  color={"black"}
+                  onClick={onClose}
+                >
+                  Project
                 </Button>
               </Box>
             </Link>
@@ -65,7 +96,6 @@ export default function Hamburger() {
             <Button variant="outline" mr={3} onClick={onClose}>
               Cancel
             </Button>
-            <Button colorScheme="blue">Save</Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

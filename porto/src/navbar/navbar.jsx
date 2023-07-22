@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <>
       <Box
-        bgColor={"white"}
+        bgColor={"grey"}
         width={"100%"}
         h={"65px"}
         shadow={"lg"}

@@ -27,6 +27,7 @@ export default function Skills() {
               <Text
                 fontSize={{ base: "0px", md: "12px", lg: "20px" }}
                 ml={{ base: "0px", md: "6px", lg: "15px" }}
+                color={"whiteAlpha.800"}
               >
                 HTML
               </Text>
@@ -43,6 +44,7 @@ export default function Skills() {
               <Text
                 fontSize={{ base: "0px", md: "12px", lg: "20px" }}
                 ml={{ base: "0px", md: "6px", lg: "15px" }}
+                color={"whiteAlpha.800"}
               >
                 CSS
               </Text>
@@ -56,7 +58,10 @@ export default function Skills() {
               h={{ base: "20px", md: "40px", lg: "80px", xl: "100px" }}
             ></Image>
             <figcaption>
-              <Text fontSize={{ base: "0px", md: "12px", lg: "20px" }}>
+              <Text
+                fontSize={{ base: "0px", md: "12px", lg: "20px" }}
+                color={"whiteAlpha.800"}
+              >
                 Javascript
               </Text>
             </figcaption>
@@ -69,7 +74,10 @@ export default function Skills() {
               h={{ base: "20px", md: "40px", lg: "80px", xl: "100px" }}
             ></Image>
             <figcaption>
-              <Text fontSize={{ base: "0px", md: "12px", lg: "20px" }}>
+              <Text
+                fontSize={{ base: "0px", md: "12px", lg: "20px" }}
+                color={"whiteAlpha.800"}
+              >
                 React.Js
               </Text>
             </figcaption>
@@ -82,7 +90,10 @@ export default function Skills() {
               h={{ base: "20px", md: "40px", lg: "80px", xl: "100px" }}
             ></Image>
             <figcaption>
-              <Text fontSize={{ base: "0px", md: "12px", lg: "20px" }}>
+              <Text
+                fontSize={{ base: "0px", md: "12px", lg: "20px" }}
+                color={"whiteAlpha.800"}
+              >
                 node.Js
               </Text>
             </figcaption>
@@ -95,7 +106,10 @@ export default function Skills() {
               h={{ base: "20px", md: "40px", lg: "80px", xl: "100px" }}
             ></Image>
             <figcaption>
-              <Text fontSize={{ base: "0px", md: "12px", lg: "20px" }}>
+              <Text
+                fontSize={{ base: "0px", md: "12px", lg: "20px" }}
+                color={"whiteAlpha.800"}
+              >
                 Github
               </Text>
             </figcaption>

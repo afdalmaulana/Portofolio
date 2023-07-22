@@ -15,7 +15,7 @@ export default function MyProject() {
               colorScheme="white"
               w={{ base: "25px", md: "75px", lg: "100px" }}
               fontSize={{ base: "8px", md: "12px", lg: "15px" }}
-              color={"gray"}
+              color={"white"}
               focusBorderColor={"black"}
             >
               My Project

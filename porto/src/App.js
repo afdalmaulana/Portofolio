@@ -5,6 +5,7 @@ import Navbar from './navbar/navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Landing/Home';
 import Stopwatch from './components/Stopwatch';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Routes>
     <Route path='/' element={<Home/>}></Route>
     <Route path='/timer' element={<Stopwatch/>}></Route>
+    <Route path='/calculator' element={<Calculator/>}></Route>
     </Routes>
     </>
   );

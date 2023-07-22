@@ -25,9 +25,10 @@ export default function Project() {
     <>
       <Box>
         <Stack>
-          <Fade cascade={true}>
+          <Fade cascade={true} triggerOnce={true}>
             <Card
-              maxW={"sm"}
+              w={"350px"}
+              maxh={"480px"}
               ml={"100px"}
               mt={"40px"}
               bgColor={"white"}
@@ -35,18 +36,16 @@ export default function Project() {
             >
               <CardBody>
                 <Box
-                  height={"200px"}
-                  position="relative"
+                  height={{ sm: "100px", md: "150px", lg: "200px" }}
                   backgroundPosition="center"
                   backgroundRepeat="no-repeat"
                   backgroundSize="cover"
                   borderRadius="lg"
                   backgroundImage={"Goldenbook.png"}
                 ></Box>
-                {/* <Image src="Goldenbook.png" w={"200px"} h={"100px"}></Image> */}
                 <Stack mt="6" spacing="3">
-                  <Heading size="lg">Golden Book</Heading>
-                  <Collapse startingHeight={20} in={show}>
+                  <Collapse startingHeight={30} in={show}>
+                    <Heading size="md">Golden Book</Heading>
                     This project is an example of a website for reading articles
                     or blogs. The reading of the articles contained in this
                     website is data originating from the Purwadhika Backend
@@ -62,11 +61,6 @@ export default function Project() {
                   >
                     {show ? "Less" : "More"}
                   </Button>
-                  <Text
-                    align={"justify"}
-                    color={"black"}
-                    fontSize={"12px"}
-                  ></Text>
                 </Stack>
               </CardBody>
               <CardFooter>

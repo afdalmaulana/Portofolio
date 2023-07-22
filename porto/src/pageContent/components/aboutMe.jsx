@@ -14,21 +14,32 @@ import { Fade } from "react-awesome-reveal";
 export default function AboutMe() {
   return (
     <>
-      <Box id="about"
-        bgColor={"#d8ccbe"}
-        h={{ base: "550px", md: "650px", lg: "750px", xl: "800px" }}
+      <Box
+        id="about"
+        // bgColor={"#d8ccbe"}
+        bgColor={"#176B87"}
+        h={{ base: "500px", md: "650px", lg: "750px", xl: "800px" }}
       >
         <Stack ml={"100px"}>
-          <Fade direction="up" cascade>
-            <Text color={"#60574c"} fontSize={"32px"} mt={"64px"}>
+          <Fade direction="up" cascade triggerOnce={true}>
+            <Text
+              // color={"#60574c"}
+              color={"white"}
+              fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
+              mt={"64px"}
+            >
               A bit about me
             </Text>
-            <Text color={"black"} fontSize={"64"}>
+            <Text
+              color={"white"}
+              fontSize={{ sm: "24px", md: "32px", lg: "64px" }}
+            >
               Who am I ?
             </Text>
             <Box ml={{ md: 2 }} mr={{ base: 100, md: 100, lg: 100 }}>
               <Text
                 align={"justify"}
+                color={"white"}
                 fontSize={{ base: "10px", md: "12px", lg: "20px" }}
               >
                 Graduated from the Indonesian Muslim University Makassar
@@ -44,7 +55,13 @@ export default function AboutMe() {
                 and still want to keep learning
               </Text>
             </Box>
-            <Text id="about" color={"#60574c"} fontSize={"32px"} mt={"64px"}>
+            <Text
+              id="about"
+              // color={"#60574c"}
+              color={"white"}
+              fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
+              mt={"64px"}
+            >
               Skills
             </Text>
             <Box>
