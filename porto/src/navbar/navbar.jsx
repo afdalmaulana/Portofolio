@@ -10,8 +10,9 @@ export default function Navbar() {
     <>
       <Box
         bgColor={"grey"}
-        width={"100%"}
-        h={"65px"}
+        w={"100%"}
+        h={{ base: "60px" }}
+        // h={"200px"}
         shadow={"lg"}
         position={"fixed"}
         top={0}
@@ -21,10 +22,14 @@ export default function Navbar() {
           <Title />
           <Spacer />
           <ButtonGroup>
-            <AboutMe />
-            <Education />
-            <MyProject />
-            <Hamburger />
+            <Flex className="dekstop" justify={"space-between"}>
+              <AboutMe />
+              <Education />
+              <MyProject />
+            </Flex>
+            <Box className="mobile">
+              <Hamburger />
+            </Box>
           </ButtonGroup>
         </Flex>
       </Box>

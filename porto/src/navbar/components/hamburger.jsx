@@ -8,6 +8,7 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
+  Flex,
   IconButton,
   Input,
   Text,
@@ -25,78 +26,78 @@ export default function Hamburger() {
   const btnRef = React.useRef();
   return (
     <>
-      <Box className="responsive">
+      <Box className="hamburger">
         <IconButton
           mt={"10px"}
           mr={"10px"}
           icon={<GiHamburgerMenu />}
           onClick={onOpen}
           ref={btnRef}
-          w={{ base: "25px", md: "0px", lg: "0px" }}
+          // size={"1000000px"
+          // w={{ sm: "2px", md: "0px", lg: "0px" }}
         ></IconButton>
       </Box>
       <Drawer
         isOpen={isOpen}
-        placement="right"
+        placement="top"
         onClose={onClose}
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent bgColor={"#d8ccbe"} w={"10px"} ml={"20px"}>
+        <DrawerContent bgColor={"#073b4c"} h={"100px"}>
           <DrawerCloseButton />
           <DrawerBody>
-            <Link to="about" smooth={true}>
+            <Flex mt={"20px"}>
               <Box>
-                <Button
-                  mt={"50px"}
-                  mr={"10px"}
-                  colorScheme="#292e33"
-                  w={"280px"}
-                  fontSize={"20px"}
-                  color={"black"}
-                  onClick={onClose}
-                >
-                  About
-                </Button>
+                <Link to="about" smooth={true}>
+                  <Button
+                    mt={"10px"}
+                    ml={"20px"}
+                    mr={"10px"}
+                    colorScheme="#292e33"
+                    w={"100px"}
+                    fontSize={"20px"}
+                    color={"black"}
+                    onClick={onClose}
+                  >
+                    About
+                  </Button>
+                </Link>
               </Box>
-            </Link>
-            <Link to="education" smooth={true}>
-              <Box>
-                <Button
-                  mt={"10px"}
-                  mr={"10px"}
-                  colorScheme="#292e33"
-                  w={"280px"}
-                  fontSize={"20px"}
-                  color={"black"}
-                  onClick={onClose}
-                >
-                  Education
-                </Button>
-              </Box>
-            </Link>
-            <Link to="project" smooth={true}>
-              <Box>
-                <Button
-                  mt={"10px"}
-                  mr={"10px"}
-                  colorScheme="#292e33"
-                  w={"280px"}
-                  fontSize={"20px"}
-                  color={"black"}
-                  onClick={onClose}
-                >
-                  Project
-                </Button>
-              </Box>
-            </Link>
+              <Link to="education" smooth={true}>
+                <Box>
+                  <Button
+                    mt={"10px"}
+                    mr={"10px"}
+                    colorScheme="#292e33"
+                    // colorScheme="cyan"
+                    w={"110px"}
+                    fontSize={"20px"}
+                    color={"black"}
+                    onClick={onClose}
+                  >
+                    Education
+                  </Button>
+                </Box>
+              </Link>
+              <Link to="project" smooth={true}>
+                <Box>
+                  <Button
+                    mt={"10px"}
+                    mr={"10px"}
+                    colorScheme="#292e33"
+                    // colorScheme="cyan"s
+                    w={"100px"}
+                    fontSize={"20px"}
+                    color={"black"}
+                    onClick={onClose}
+                  >
+                    Project
+                  </Button>
+                </Box>
+              </Link>
+            </Flex>
           </DrawerBody>
-
-          <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
-              Cancel
-            </Button>
-          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </>

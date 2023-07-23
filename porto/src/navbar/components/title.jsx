@@ -5,12 +5,8 @@ export default function Title() {
   return (
     <>
       <Link to={"/"}>
-        <Box ml={"20px"}>
-          <Text
-            fontSize={{ base: "30px", md: "30px", lg: "40px" }}
-            color={"white"}
-            mt={{ sm: "10px", lg: "0" }}
-          >
+        <Box ml={{ base: "10px" }}>
+          <Text fontSize={{ base: "40px" }} color={"white"} mt={"5px"}>
             Portofolio
           </Text>
         </Box>

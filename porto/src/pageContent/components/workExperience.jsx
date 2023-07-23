@@ -60,7 +60,7 @@ export default function WorkExperience() {
                   </UnorderedList>
                 </Stack>
               </Box>
-              <Box mr={"100px"}>
+              <Box mr={"50px"}>
                 <Text color={"#8e7f6e"} fontSize={"24px"} mt={"50px"}>
                   Part-time
                 </Text>

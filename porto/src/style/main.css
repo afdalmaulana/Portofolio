@@ -1,36 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
 
-@media only screen and (min-width: 768px){
-    .responsive {
+@media only screen and (max-width: 600px) {
+    .dekstop{
+        display: flex;
+        visibility: hidden;
+        position: absolute;
+    }
+    .kekuatan{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .strength{
+        height: 500px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+    /* layar besar */
+    .hamburger {
         visibility: hidden;
         opacity: 1;
         position: absolute;
     }
+    
 }
 
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
     .education{
         visibility: hidden;
         opacity: 1;
     }   
-}
+} */
 
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
     .aboutme{
         visibility: hidden;
         opacity: 1;
     }
-}
-@media only screen and (max-width: 768px){
+} */
+/* @media only screen and (max-width: 768px){
     .projectme{
         visibility: hidden;
         opacity: 1;
     }
-}
+} */
+/* @media only screen and() {
+    
+} */
+
 
 @media only screen and (max-width: 768px) {
-    .banner{
+    /* .strength{
+        width: 414px;
+        height: 500px;
+    } */
+    
+    /* .banner{
         width: 200px;
-    }
+    } */
 }
 
 

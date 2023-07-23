@@ -6,15 +6,15 @@ import ProfilePic from "./avatar";
 export default function Banner() {
   return (
     <>
-      <Box bgColor={"#073b4c"} h={{ sm: "320px", md: "480", lg: "720px" }}>
+      <Box bgColor={"#073b4c"} h={{ base: "250px", md: "480", lg: "720px" }}>
         <Stack mt={"60px"}>
           <Flex>
             <Box
-              mt={"100px"}
-              ml={{ sm: "50px", md: "80px", lg: "100px" }}
+              mt={{ base: "50px", md: "40px", lg: "100px" }}
+              ml={{ base: "30px", md: "80px", lg: "100px" }}
               color={"white"}
               className="banner"
-              w={{ sm: "200px", md: "400px", lg: "640px" }}
+              w={{ base: "200px", md: "400px", lg: "640px" }}
             >
               <Text fontSize={{ sm: "12px", md: "20px", lg: "30px" }}>
                 Hello, I'm

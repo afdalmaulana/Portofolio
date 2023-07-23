@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import Banner from "./components/Banner";
 
 import AboutMe from "./components/aboutMe";
@@ -14,9 +14,9 @@ export default function Content() {
     <>
       <Banner />
       <Motto />
-      <AboutMe />
-      <MyEducation />
-      <WorkExperience />
+      {/* <AboutMe /> */}
+      {/* <MyEducation /> */}
+      {/* <WorkExperience /> */}
     </>
   );
 }

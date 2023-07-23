@@ -3,32 +3,40 @@ import { Box, Flex, Grid, GridItem, Stack, Text } from "@chakra-ui/react";
 export default function Motto() {
   return (
     <>
-      <Box bgColor={"#292e33"} h={"500px"}>
+      <Box
+        bgColor={"#292e33"}
+        maxW={"100%"}
+        h={{ base: "", md: "", lg: "500px" }}
+        className="strength"
+      >
         <Box>
           <Stack color={"#8e7f6e"}>
-            {/* <Stack color={"white"}> */}
             <Text
-              ml={{ sm: "50px", md: "80px", lg: "100px" }}
-              fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
-              mt={"80px"}
+              ml={{ base: "30px", md: "80px", lg: "100px" }}
+              fontSize={{ base: "16px", md: "24px", lg: "32px" }}
+              mt={{ base: "30px", md: "40px", lg: "80px" }}
             >
               MY STRENGTH
             </Text>
           </Stack>
-          <Grid templateColumns="repeat(3, 1fr)" gap={8} mt={"20px"}>
-            <GridItem
-              w={{ sm: "100px", md: "200px", lg: "400px" }}
-              h="10"
-              ml={{ sm: "50px", md: "80px", lg: "100px" }}
-              fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
+          <Flex className="kekuatan" justify={"space-around"}>
+            <Box
+              w={{ sm: "150px", md: "800px", lg: "600px" }}
               color={"white"}
+              ml={{ base: "30px", md: "80px", lg: "100px" }}
+              mr={{ base: "30px", md: "80px", lg: "0px" }}
             >
-              Ambition
               <Text
-                fontSize={{ sm: "8px", md: "10px", lg: "14px" }}
-                mt={"24px"}
-                color={"white"}
+                fontSize={{ base: "12px", md: "24px", lg: "40px" }}
+                mt={{ sm: "10px", md: "20px", lg: "10px" }}
+              >
+                Ambition
+              </Text>
+              <Text
+                pt={"10px"}
                 align={"justify"}
+                fontSize={{ base: "8px", md: "24px", lg: "16px" }}
+                mt={{ sm: "10px", md: "40px", lg: "16px" }}
               >
                 I am a person who is ready to get out of my comfort zone and is
                 not afraid to take risks, and is always ready to take advice. i
@@ -37,19 +45,25 @@ export default function Motto() {
                 keep going forward because i know what i want and i am sure i
                 can accomplish it.
               </Text>
-            </GridItem>
-            <GridItem
-              w={{ sm: "100px", md: "200px", lg: "400px" }}
-              h="10"
-              fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
+            </Box>
+            <Box
+              w={{ sm: "150px", md: "800px", lg: "800px" }}
+              ml={{ base: "30px", md: "50px", lg: "20px" }}
+              mr={{ base: "30px", md: "80px", lg: "0px" }}
+              mt={{ base: "30px", md: "80px", lg: "0px" }}
               color={"white"}
             >
-              Precision
               <Text
-                fontSize={{ sm: "8px", md: "10px", lg: "14px" }}
-                mt={"24px"}
-                color={"white"}
+                fontSize={{ base: "16px", md: "24px", lg: "40px" }}
+                mt={{ sm: "10px", md: "20px", lg: "10px" }}
+              >
+                Precision
+              </Text>
+              <Text
                 align={"justify"}
+                fontSize={{ base: "8px", md: "24px", lg: "16px" }}
+                mt={{ base: "5px", md: "40px", lg: "16px" }}
+                pt={"10px"}
               >
                 I have always tried to perform every task with precision and
                 precision, because quality is the key to extraordinary results.
@@ -60,27 +74,34 @@ export default function Motto() {
                 tried to convey information clearly and correctly, so that there
                 is no confusion or misunderstanding
               </Text>
-            </GridItem>
-            <GridItem
-              w={{ sm: "100px", md: "200px", lg: "400px" }}
-              h="10"
-              mr={"100px"}
-              fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
+            </Box>
+            <Box
+              w={{ sm: "150px", md: "800px", lg: "500px" }}
+              ml={{ base: "30px", md: "50px", lg: "20px" }}
+              mr={{ base: "30px", md: "80px", lg: "100px" }}
+              mt={{ base: "30px", md: "80px", lg: "0px" }}
               color={"white"}
             >
-              On Time
               <Text
-                fontSize={{ sm: "8px", md: "10px", lg: "16px" }}
-                mt={"24px"}
-                color={"white"}
+                fontSize={{ base: "16px", md: "24px", lg: "40px" }}
+                mt={{ sm: "10px", md: "20px", lg: "10px" }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam voluptas doloremque eligendi. Quidem, neque sequi
-                saepe illo, architecto tenetur aspernatur voluptatem magnam sit
-                nostrum magni obcaecati nesciunt excepturi enim esse.
+                On Time
               </Text>
-            </GridItem>
-          </Grid>
+              <Text
+                align={"justify"}
+                fontSize={{ base: "8px", md: "24px", lg: "16px" }}
+                mt={{ base: "5px", md: "40px", lg: "16px" }}
+                pt={"10px"}
+              >
+                The discipline in time helped me optimize productivity and
+                achieve goals more efficiently. Punctuality is one of the keys
+                to success in life. I'm always trying to reach it. I was proud
+                to be dependable about punctuality. It helps me build trust with
+                others
+              </Text>
+            </Box>
+          </Flex>
         </Box>
       </Box>
     </>
