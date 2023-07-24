@@ -65,7 +65,7 @@ export default function AboutMe() {
               Skills
             </Text>
             <Box>
-              <Skills />
+              {/* <Skills /> */}
             </Box>
           </Fade>
         </Stack>

@@ -8,7 +8,7 @@ export default function ProfilePic() {
       <Box
         className="foto"
         mt={{ base: "50px", md: "40px", lg: "100px" }}
-        ml={{ base: "80px", md: "160px", lg: "200px" }}
+        ml={{ base: "40px", md: "160px", lg: "200px" }}
         bgColor={"red"}
         w={{ base: "100px", md: "150px", lg: "250px" }}
         // w={"250px"}

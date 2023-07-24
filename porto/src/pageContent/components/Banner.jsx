@@ -14,7 +14,7 @@ export default function Banner() {
               ml={{ base: "30px", md: "80px", lg: "100px" }}
               color={"white"}
               className="banner"
-              w={{ base: "200px", md: "400px", lg: "640px" }}
+              w={{ base: "230px", md: "400px", lg: "640px" }}
             >
               <Text fontSize={{ sm: "12px", md: "20px", lg: "30px" }}>
                 Hello, I'm
@@ -39,8 +39,8 @@ export default function Banner() {
                   <Link to={"https://github.com/afdalmaulana"} target="_blank">
                     <Image
                       src="github.png"
-                      w={{ base: "20px", md: "40px", lg: "80px", xl: "100px" }}
-                      h={{ base: "20px", md: "40px", lg: "80px", xl: "100px" }}
+                      w={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
+                      h={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
                     ></Image>
                   </Link>
                   <Link
@@ -50,8 +50,8 @@ export default function Banner() {
                     <Image
                       ml={"10px"}
                       src="linked.png"
-                      w={{ base: "20px", md: "40px", lg: "80px", xl: "100px" }}
-                      h={{ base: "20px", md: "40px", lg: "80px", xl: "100px" }}
+                      w={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
+                      h={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
                     ></Image>
                   </Link>
                   <Link
@@ -61,8 +61,8 @@ export default function Banner() {
                     <Image
                       ml={"10px"}
                       src="instagram.png"
-                      w={{ base: "20px", md: "40px", lg: "80px", xl: "100px" }}
-                      h={{ base: "20px", md: "40px", lg: "80px", xl: "100px" }}
+                      w={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
+                      h={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
                     ></Image>
                   </Link>
                 </Flex>

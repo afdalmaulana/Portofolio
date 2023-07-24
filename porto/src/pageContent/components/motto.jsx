@@ -28,7 +28,7 @@ export default function Motto() {
             >
               <Text
                 fontSize={{ base: "12px", md: "24px", lg: "40px" }}
-                mt={{ sm: "10px", md: "20px", lg: "10px" }}
+                mt={{ sm: "20px", md: "20px", lg: "10px" }}
               >
                 Ambition
               </Text>

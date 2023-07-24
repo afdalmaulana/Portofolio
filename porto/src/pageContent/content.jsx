@@ -14,7 +14,7 @@ export default function Content() {
     <>
       <Banner />
       <Motto />
-      {/* <AboutMe /> */}
+      <AboutMe />
       {/* <MyEducation /> */}
       {/* <WorkExperience /> */}
     </>
