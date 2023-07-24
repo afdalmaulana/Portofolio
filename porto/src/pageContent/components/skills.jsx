@@ -36,6 +36,7 @@ export default function Skills() {
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
+                bgColor={"whiteAlpha.800"}
               >
                 <Box
                   mt={"10px"}
@@ -46,53 +47,70 @@ export default function Skills() {
                   w={{ base: "100px", lg: "150px" }}
                   h={{ base: "80px", lg: "150px" }}
                 ></Box>
-                <CardFooter
-                  bgColor={"yellow"}
-                  borderRadius={"10px"}
-                  opacity={10}
+                <Box
+                  bgGradient={
+                    "linear(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%)"
+                  }
+                  borderBottomRadius={"10px"}
+                  w={{ base: "100px", lg: "150px" }}
+                  h={{ base: "60px", lg: "100px" }}
+                  pos={"absolute"}
+                  mt={{ base: "105px", lg: "150px" }}
+                  // opacity={0.}
+                ></Box>
+                <Box
+                  zIndex={2}
+                  mt={{ base: "25px", md: "15px", lg: "5px" }}
+                  ml={{ base: "5px", lg: "5px" }}
+                  color={"white"}
                   textAlign={"center"}
                 >
-                  <Box ml={{ base: "5px", lg: "10px" }}>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>HTML</Text>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>
-                      Beginner
-                    </Text>
-                  </Box>
-                </CardFooter>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>HTML</Text>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>Beginner</Text>
+                </Box>
               </Card>
-
               <Card
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
+                bgColor={"whiteAlpha.800"}
               >
                 <Box
                   mt={"10px"}
-                  bgImage={"CSS.png"}
+                  bgImage={"css.png"}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
                   w={{ base: "100px", lg: "150px" }}
                   h={{ base: "80px", lg: "150px" }}
                 ></Box>
-                <CardFooter
-                  bgColor={"yellow"}
-                  borderRadius={"10px"}
-                  opacity={10}
+                <Box
+                  bgGradient={
+                    "linear(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%)"
+                  }
+                  borderBottomRadius={"10px"}
+                  w={{ base: "100px", lg: "150px" }}
+                  h={{ base: "60px", lg: "100px" }}
+                  pos={"absolute"}
+                  mt={{ base: "105px", lg: "150px" }}
+                  // opacity={0.}
+                ></Box>
+                <Box
+                  zIndex={2}
+                  mt={{ base: "25px", md: "15px", lg: "5px" }}
+                  ml={{ base: "5px", lg: "5px" }}
+                  color={"white"}
                   textAlign={"center"}
                 >
-                  <Box ml={{ base: "5px", lg: "10px" }}>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>CSS</Text>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>
-                      Beginner
-                    </Text>
-                  </Box>
-                </CardFooter>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>CSS</Text>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>Beginner</Text>
+                </Box>
               </Card>
               <Card
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
+                bgColor={"whiteAlpha.800"}
               >
                 <Box
                   mt={"10px"}
@@ -103,26 +121,35 @@ export default function Skills() {
                   w={{ base: "100px", lg: "150px" }}
                   h={{ base: "80px", lg: "150px" }}
                 ></Box>
-                <CardFooter
-                  bgColor={"yellow"}
-                  borderRadius={"10px"}
-                  opacity={10}
+                <Box
+                  bgGradient={
+                    "linear(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%)"
+                  }
+                  borderBottomRadius={"10px"}
+                  w={{ base: "100px", lg: "150px" }}
+                  h={{ base: "60px", lg: "100px" }}
+                  pos={"absolute"}
+                  mt={{ base: "105px", lg: "150px" }}
+                  // opacity={0.}
+                ></Box>
+                <Box
+                  zIndex={2}
+                  mt={{ base: "25px", md: "15px", lg: "5px" }}
+                  ml={{ base: "5px", lg: "5px" }}
+                  color={"white"}
                   textAlign={"center"}
                 >
-                  <Box ml={{ base: "5px", lg: "5px" }}>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>
-                      Javascript
-                    </Text>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>
-                      Beginner
-                    </Text>
-                  </Box>
-                </CardFooter>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>
+                    Javascript
+                  </Text>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>Beginner</Text>
+                </Box>
               </Card>
               <Card
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
+                bgColor={"whiteAlpha.800"}
               >
                 <Box
                   mt={"10px"}
@@ -133,24 +160,33 @@ export default function Skills() {
                   w={{ base: "100px", lg: "150px" }}
                   h={{ base: "80px", lg: "150px" }}
                 ></Box>
-                <CardFooter
-                  bgColor={"yellow"}
-                  borderRadius={"10px"}
-                  opacity={10}
+                <Box
+                  bgGradient={
+                    "linear(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%)"
+                  }
+                  borderBottomRadius={"10px"}
+                  w={{ base: "100px", lg: "150px" }}
+                  h={{ base: "60px", lg: "100px" }}
+                  pos={"absolute"}
+                  mt={{ base: "105px", lg: "150px" }}
+                  // opacity={0.}
+                ></Box>
+                <Box
+                  zIndex={2}
+                  mt={{ base: "25px", md: "15px", lg: "5px" }}
+                  ml={{ base: "5px", lg: "5px" }}
+                  color={"white"}
                   textAlign={"center"}
                 >
-                  <Box ml={{ base: "5px", lg: "10px" }}>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>ReactJs</Text>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>
-                      Beginner
-                    </Text>
-                  </Box>
-                </CardFooter>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>ReactJs</Text>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>Beginner</Text>
+                </Box>
               </Card>
               <Card
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
+                bgColor={"whiteAlpha.800"}
               >
                 <Box
                   mt={"10px"}
@@ -161,24 +197,33 @@ export default function Skills() {
                   w={{ base: "100px", lg: "150px" }}
                   h={{ base: "80px", lg: "150px" }}
                 ></Box>
-                <CardFooter
-                  bgColor={"yellow"}
-                  borderRadius={"10px"}
-                  opacity={10}
+                <Box
+                  bgGradient={
+                    "linear(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%)"
+                  }
+                  borderBottomRadius={"10px"}
+                  w={{ base: "100px", lg: "150px" }}
+                  h={{ base: "60px", lg: "100px" }}
+                  pos={"absolute"}
+                  mt={{ base: "105px", lg: "150px" }}
+                  // opacity={0.}
+                ></Box>
+                <Box
+                  zIndex={2}
+                  mt={{ base: "25px", md: "15px", lg: "5px" }}
+                  ml={{ base: "5px", lg: "5px" }}
+                  color={"white"}
                   textAlign={"center"}
                 >
-                  <Box ml={{ base: "5px", lg: "10px" }}>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>NodeJs</Text>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>
-                      Beginner
-                    </Text>
-                  </Box>
-                </CardFooter>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>NodeJs</Text>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>Beginner</Text>
+                </Box>
               </Card>
               <Card
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
+                bgColor={"whiteAlpha.800"}
               >
                 <Box
                   mt={"10px"}
@@ -189,19 +234,27 @@ export default function Skills() {
                   w={{ base: "100px", lg: "150px" }}
                   h={{ base: "80px", lg: "150px" }}
                 ></Box>
-                <CardFooter
-                  bgColor={"yellow"}
-                  borderRadius={"10px"}
-                  opacity={10}
+                <Box
+                  bgGradient={
+                    "linear(180deg, #5d6366 0, #415460 25%, #1f4459 50%, #003553 75%, #00264d 100%)"
+                  }
+                  borderBottomRadius={"10px"}
+                  w={{ base: "100px", lg: "150px" }}
+                  h={{ base: "60px", lg: "100px" }}
+                  pos={"absolute"}
+                  mt={{ base: "105px", lg: "150px" }}
+                  // opacity={0.}
+                ></Box>
+                <Box
+                  zIndex={2}
+                  mt={{ base: "25px", md: "15px", lg: "5px" }}
+                  ml={{ base: "5px", lg: "5px" }}
+                  color={"white"}
                   textAlign={"center"}
                 >
-                  <Box ml={{ base: "5px", lg: "10px" }}>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>Github</Text>
-                    <Text fontSize={{ base: "12px", lg: "24px" }}>
-                      Beginner
-                    </Text>
-                  </Box>
-                </CardFooter>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>Github</Text>
+                  <Text fontSize={{ base: "12px", lg: "24px" }}>Beginner</Text>
+                </Box>
               </Card>
             </Fade>
           </Flex>
