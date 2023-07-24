@@ -55,7 +55,11 @@ export default function WorkExperience() {
                       <ListItem>Do administrative tasks</ListItem>
                       <ListItem>Assist staff with employee data</ListItem>
                     </UnorderedList>
-                    <Text mt={"40px"} fontSize={"32px"} color={"white"}>
+                    <Text
+                      mt={"40px"}
+                      fontSize={{ base: "24px", lg: "32px" }}
+                      color={"white"}
+                    >
                       SOUTH SULAWESI GOVERNOR’S OFFICE
                     </Text>
                     <Text fontSize={"16px"} mt={"20px"} color={"white"}>
@@ -70,10 +74,18 @@ export default function WorkExperience() {
                   </Stack>
                 </Box>
                 <Box mr={"50px"}>
-                  <Text color={"#8e7f6e"} fontSize={"24px"} mt={"50px"}>
+                  <Text
+                    color={"#8e7f6e"}
+                    fontSize={"24px"}
+                    mt={{ base: "40px", md: "50px", lg: "90px" }}
+                  >
                     Part-time
                   </Text>
-                  <Text fontSize={"32px"} mt={"40px"} color={"white"}>
+                  <Text
+                    fontSize={{ base: "24px", lg: "32px" }}
+                    mt={"40px"}
+                    color={"white"}
+                  >
                     CV. Sakti Mandiri
                   </Text>
                   <Text fontSize={"16px"} mt={"20px"} color={"white"}>

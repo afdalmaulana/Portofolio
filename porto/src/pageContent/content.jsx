@@ -9,6 +9,7 @@ import AllProject from "./components/AllProject";
 import MyEducation from "./components/MyEducation";
 import WorkExperience from "./components/workExperience";
 import Footer from "../footer/Footer";
+import Certi from "./components/Certi";
 
 export default function Content() {
   return (
@@ -18,6 +19,7 @@ export default function Content() {
       <AboutMe />
       <MyEducation />
       <WorkExperience />
+      <Certi />
       <Footer />
     </>
   );
