@@ -16,9 +16,10 @@ export default function AboutMe() {
     <>
       <Box
         id="about"
+        className="aboutme"
         // bgColor={"#d8ccbe"}
         bgColor={"#176B87"}
-        h={{ base: "500px", md: "650px", lg: "750px", xl: "800px" }}
+        h={{ base: "800px", md: "650px", lg: "750px", xl: "800px" }}
       >
         <Stack>
           <Box
@@ -66,15 +67,15 @@ export default function AboutMe() {
                 id="about"
                 // color={"#60574c"}
                 color={"white"}
-                fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
-                mt={"64px"}
+                fontSize={{ base: "24px", md: "24px", lg: "40px" }}
+                mt={{ base: "40px", md: "48px", lg: "64px" }}
               >
                 Skills
               </Text>
             </Fade>
           </Box>
         </Stack>
-        {/* <Skills /> */}
+        <Skills />
       </Box>
     </>
   );
