@@ -27,30 +27,31 @@ export default function Project() {
         <Stack>
           <Fade cascade={true} triggerOnce={true}>
             <Card
-              w={"350px"}
-              maxh={"480px"}
-              ml={"100px"}
-              mt={"40px"}
+              w={{ base: "150px", lg: "150px" }}
+              h={{ base: "165px", lg: "250px" }}
+              // ml={"100px"}
+              mt={{ base: "20px", lg: "40px" }}
+              mr={{ base: 10, md: 100, lg: 100 }}
               bgColor={"white"}
               borderRadius={"20px"}
             >
               <CardBody>
                 <Box
-                  height={{ sm: "100px", md: "150px", lg: "200px" }}
-                  backgroundPosition="center"
-                  backgroundRepeat="no-repeat"
-                  backgroundSize="cover"
-                  borderRadius="lg"
+                  bgPos={"center"}
+                  bgSize={"cover"}
+                  bgRepeat={"no-repeat"}
+                  w={{ base: "120px", lg: "150px" }}
+                  h={{ base: "80px", lg: "150px" }}
                   backgroundImage={"Goldenbook.png"}
                 ></Box>
-                <Stack mt="6" spacing="3">
-                  <Collapse startingHeight={30} in={show}>
-                    <Heading size="md">Golden Book</Heading>
+                {/* <Stack mt="6" spacing="3"> */}
+                {/* <Collapse startingHeight={30} in={show}>
+                    <Text>Golden Book</Text>
                     This project is an example of a website for reading articles
                     or blogs. The reading of the articles contained in this
                     website is data originating from the Purwadhika Backend
-                  </Collapse>
-                  <Button
+                  </Collapse> */}
+                {/* <Button
                     w={"10px"}
                     ml={"5px"}
                     size="sm"
@@ -60,11 +61,11 @@ export default function Project() {
                     variant={""}
                   >
                     {show ? "Less" : "More"}
-                  </Button>
-                </Stack>
+                  </Button> */}
+                {/* </Stack> */}
               </CardBody>
               <CardFooter>
-                <Link
+                {/* <Link
                   to={"https://miniproject--goldenbook.netlify.app/"}
                   target="_blank"
                 >
@@ -75,7 +76,7 @@ export default function Project() {
                   >
                     View Project
                   </Button>
-                </Link>
+                </Link> */}
               </CardFooter>
             </Card>
           </Fade>

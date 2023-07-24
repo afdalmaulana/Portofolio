@@ -18,6 +18,17 @@
     .strength{
         height: 450px;
     }
+    .education{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* height: 800px; */
+    }
+    .listProject{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     
 }
 
