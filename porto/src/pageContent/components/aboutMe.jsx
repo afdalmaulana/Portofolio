@@ -20,55 +20,61 @@ export default function AboutMe() {
         bgColor={"#176B87"}
         h={{ base: "500px", md: "650px", lg: "750px", xl: "800px" }}
       >
-        <Stack ml={"100px"}>
-          <Fade direction="up" cascade triggerOnce={true}>
-            <Text
-              // color={"#60574c"}
-              color={"white"}
-              fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
-              mt={"64px"}
-            >
-              A bit about me
-            </Text>
-            <Text
-              color={"white"}
-              fontSize={{ sm: "24px", md: "32px", lg: "64px" }}
-            >
-              Who am I ?
-            </Text>
-            <Box ml={{ md: 2 }} mr={{ base: 100, md: 100, lg: 100 }}>
+        <Stack>
+          <Box
+            ml={{ base: "30px", lg: "100px" }}
+            mt={{ base: "50px", md: "60px", lg: "100px" }}
+          >
+            <Fade direction="up" cascade triggerOnce={true}>
               <Text
-                align={"justify"}
+                // color={"#60574c"}
                 color={"white"}
-                fontSize={{ base: "10px", md: "12px", lg: "20px" }}
+                fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
               >
-                Graduated from the Indonesian Muslim University Makassar
-                majoring in Informatics Engineering with a Bachelor of Computer
-                (S.Kom) degree and Microsoft Technology Associate (MTA) with a
-                GPA of 3.51 / 4.00. Born in Belawa, Wajo, on July 26, 1998.
-                Active and involved in several organizational activities on
-                campus and outside campus. I am a punctual person, persuasive in
-                communicating, objective in assessing things, besides that I
-                also think critically, creatively and dynamically. I can work
-                under pressure and easily recognize new environments, can also
-                work with a team or individually. I like to learn something new
-                and still want to keep learning
+                A bit about me
               </Text>
-            </Box>
-            <Text
-              id="about"
-              // color={"#60574c"}
-              color={"white"}
-              fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
-              mt={"64px"}
-            >
-              Skills
-            </Text>
-            <Box>
-              {/* <Skills /> */}
-            </Box>
-          </Fade>
+              <Text
+                color={"white"}
+                fontSize={{ sm: "24px", md: "32px", lg: "64px" }}
+              >
+                Who am I ?
+              </Text>
+              <Box
+                // ml={{ md: 2 }}
+                mr={{ base: 10, md: 100, lg: 100 }}
+                w={{ sm: "350px", md: "800px", lg: "1240px" }}
+              >
+                <Text
+                  align={"justify"}
+                  color={"white"}
+                  fontSize={{ base: "10px", md: "12px", lg: "20px" }}
+                >
+                  Graduated from the Indonesian Muslim University Makassar
+                  majoring in Informatics Engineering with a Bachelor of
+                  Computer (S.Kom) degree and Microsoft Technology Associate
+                  (MTA) with a GPA of 3.51 / 4.00. Born in Belawa, Wajo, on July
+                  26, 1998. Active and involved in several organizational
+                  activities on campus and outside campus. I am a punctual
+                  person, persuasive in communicating, objective in assessing
+                  things, besides that I also think critically, creatively and
+                  dynamically. I can work under pressure and easily recognize
+                  new environments, can also work with a team or individually. I
+                  like to learn something new and still want to keep learning
+                </Text>
+              </Box>
+              <Text
+                id="about"
+                // color={"#60574c"}
+                color={"white"}
+                fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
+                mt={"64px"}
+              >
+                Skills
+              </Text>
+            </Fade>
+          </Box>
         </Stack>
+        {/* <Skills /> */}
       </Box>
     </>
   );

@@ -11,6 +11,11 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
+    .myskill{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     .strength{
         height: 450px;
     }
