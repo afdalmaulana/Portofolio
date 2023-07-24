@@ -27,10 +27,10 @@ export default function Project4() {
         <Stack>
           <Fade direction="left" cascade triggerOnce={true}>
             <Card
-              w={"350px"}
-              maxh={"460px"}
-              ml={"32px"}
-              mt={"40px"}
+              w={{ lg: "350px" }}
+              maxh={{ base: "200px", lg: "480px" }}
+              ml={{ base: "0px", lg: "30px" }}
+              mt={{ base: "40px", lg: "40px" }}
               bgColor={"white"}
               borderRadius={"20px"}
             >

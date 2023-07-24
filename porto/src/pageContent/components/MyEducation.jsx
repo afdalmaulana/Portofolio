@@ -13,7 +13,7 @@ export default function MyEducation() {
       <Box
         bgColor={"#292e33"}
         id="education"
-        h={{ base: "1000px", md: "1050px", lg: "1200px" }}
+        h={{ base: "1850px", md: "1050px", lg: "1200px" }}
         maxW={"100%"}
       >
         {/* "#292e33" */}
@@ -104,32 +104,32 @@ export default function MyEducation() {
             </Fade>
           </Flex>
         </Stack>
-        <Stack>
+        <Stack id="project">
           <Text
             ml={{ base: "30px", lg: "100px" }}
             color={"#8e7f6e"}
             fontSize={{ sm: "24px", md: "48px", lg: "64px" }}
-            mt={{ base: "150px", lg: "400px" }}
+            mt={{ base: "100px", lg: "400px" }}
           >
             My Project
           </Text>
-          <Flex
-            // ml={{ base: "30px", lg: "100px" }}
-            wrap={"wrap"}
-            className="listProject"
+
+          <Box
+            w={{ sm: "350px", md: "800px", lg: "1240px" }}
+            mr={{ base: "30px", md: "80px", lg: "0px" }}
+            ml={{ base: "30px", md: "80px", lg: "100px" }}
+            h={{ base: "150px", md: "800px", lg: "600px" }}
           >
-            <Box
-              bgColor={"green"}
-              w={{ sm: "350px", md: "800px", lg: "1240px" }}
-              mr={{ base: "30px", md: "80px", lg: "0px" }}
-              ml={{ base: "30px", md: "80px", lg: "100px" }}
-              h={{ base: "150px", md: "800px", lg: "600px" }}
+            <Flex
+              // ml={{ base: "30px", lg: "100px" }}
+              wrap={"wrap"}
+              className="listProject"
             >
               <Project />
-            </Box>
-            {/* <Project3 /> */}
-            {/* <Project4 /> */}
-          </Flex>
+              <Project3 />
+              <Project4 />
+            </Flex>
+          </Box>
         </Stack>
       </Box>
     </>

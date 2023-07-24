@@ -29,6 +29,11 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
+    .myexpe{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     
 }
 

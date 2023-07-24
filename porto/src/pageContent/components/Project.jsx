@@ -27,31 +27,42 @@ export default function Project() {
         <Stack>
           <Fade cascade={true} triggerOnce={true}>
             <Card
-              w={{ base: "150px", lg: "150px" }}
-              h={{ base: "165px", lg: "250px" }}
-              // ml={"100px"}
+              w={{ lg: "350px" }}
+              maxh={{ base: "200px", lg: "480px" }}
+              ml={{ base: "0px", lg: "80px" }}
               mt={{ base: "20px", lg: "40px" }}
-              mr={{ base: 10, md: 100, lg: 100 }}
               bgColor={"white"}
               borderRadius={"20px"}
             >
               <CardBody>
                 <Box
-                  bgPos={"center"}
-                  bgSize={"cover"}
-                  bgRepeat={"no-repeat"}
-                  w={{ base: "120px", lg: "150px" }}
-                  h={{ base: "80px", lg: "150px" }}
+                  height={{ base: "100px", md: "150px", lg: "200px" }}
+                  backgroundPosition="center"
+                  backgroundRepeat="no-repeat"
+                  backgroundSize="cover"
+                  borderRadius="lg"
                   backgroundImage={"Goldenbook.png"}
                 ></Box>
-                {/* <Stack mt="6" spacing="3"> */}
-                {/* <Collapse startingHeight={30} in={show}>
-                    <Text>Golden Book</Text>
-                    This project is an example of a website for reading articles
-                    or blogs. The reading of the articles contained in this
-                    website is data originating from the Purwadhika Backend
-                  </Collapse> */}
-                {/* <Button
+                <Stack mt="6" spacing="3">
+                  <Collapse startingHeight={30} in={show}>
+                    <Heading size={{ base: "sm", lg: "md" }}>
+                      Golden Book
+                    </Heading>
+                    <Text
+                      align={"justify"}
+                      fontSize={{ base: "12px", lg: "16px" }}
+                    >
+                      This project is an example of a website for reading
+                      articles or blogs. The reading of the articles contained
+                      in this website is data originating from the Purwadhika
+                      Backend. Feature in this project is carousel banner,
+                      pagination, like button, bookmarks, register, login,
+                      change profile (username, email, password, profile
+                      picture, forget and reset password user), create blog,
+                      sort blog
+                    </Text>
+                  </Collapse>
+                  <Button
                     w={"10px"}
                     ml={"5px"}
                     size="sm"
@@ -61,11 +72,11 @@ export default function Project() {
                     variant={""}
                   >
                     {show ? "Less" : "More"}
-                  </Button> */}
-                {/* </Stack> */}
+                  </Button>
+                </Stack>
               </CardBody>
               <CardFooter>
-                {/* <Link
+                <Link
                   to={"https://miniproject--goldenbook.netlify.app/"}
                   target="_blank"
                 >
@@ -76,7 +87,7 @@ export default function Project() {
                   >
                     View Project
                   </Button>
-                </Link> */}
+                </Link>
               </CardFooter>
             </Card>
           </Fade>

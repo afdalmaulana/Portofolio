@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 export default function AllProject() {
   return (
     <>
-      <Box bgColor={"#073b4c"} id="project" h={"800px"}>
+      <Box bgColor={"#073b4c"} id="" h={"800px"}>
         <Stack>
           <Flex wrap={"wrap"}>
             <Fade direction="left" cascade>

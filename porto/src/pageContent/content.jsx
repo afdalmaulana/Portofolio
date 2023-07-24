@@ -8,6 +8,7 @@ import AllProject from "./components/AllProject";
 
 import MyEducation from "./components/MyEducation";
 import WorkExperience from "./components/workExperience";
+import Footer from "../footer/Footer";
 
 export default function Content() {
   return (
@@ -16,7 +17,8 @@ export default function Content() {
       <Motto />
       <AboutMe />
       <MyEducation />
-      {/* <WorkExperience /> */}
+      <WorkExperience />
+      <Footer />
     </>
   );
 }
