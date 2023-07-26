@@ -4,6 +4,7 @@ import Title from "./components/title";
 import AboutMe from "./components/buttonAboutMe";
 import MyProject from "./components/myProject";
 import Hamburger from "./components/hamburger";
+import ButtonExpe from "./components/buttonExperience";
 
 export default function Navbar() {
   return (
@@ -22,10 +23,15 @@ export default function Navbar() {
           <Title />
           <Spacer />
           <ButtonGroup>
-            <Flex className="dekstop" justify={"space-between"}>
+            <Flex
+              className="dekstop"
+              justify={"space-between"}
+              fontFamily={"montserrat"}
+            >
               <AboutMe />
               <Education />
               <MyProject />
+              <ButtonExpe />
             </Flex>
             <Box className="mobile">
               <Hamburger />

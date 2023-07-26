@@ -14,7 +14,7 @@ export default function WorkExperience() {
       <Box
         bgColor={"#212A3E"}
         id="experience"
-        h={{ base: "1800px", md: "500px", lg: "1000px" }}
+        h={{ base: "1200px", md: "500px", lg: "1000px" }}
         fontFamily={"montserrat"}
       >
         <Stack ml={{ base: "30px", md: "80px", lg: "100px" }}>

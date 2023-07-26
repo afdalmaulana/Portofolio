@@ -33,8 +33,6 @@ export default function Hamburger() {
           icon={<GiHamburgerMenu />}
           onClick={onOpen}
           ref={btnRef}
-          // size={"1000000px"
-          // w={{ sm: "2px", md: "0px", lg: "0px" }}
         ></IconButton>
       </Box>
       <Drawer
@@ -52,11 +50,11 @@ export default function Hamburger() {
                 <Link to="about" smooth={true}>
                   <Button
                     mt={"10px"}
-                    ml={"20px"}
-                    mr={"10px"}
+                    ml={"0px"}
+                    mr={"5px"}
                     colorScheme="#292e33"
-                    w={"100px"}
-                    fontSize={"20px"}
+                    w={"80px"}
+                    fontSize={"15px"}
                     color={"black"}
                     onClick={onClose}
                   >
@@ -68,11 +66,11 @@ export default function Hamburger() {
                 <Box>
                   <Button
                     mt={"10px"}
-                    mr={"10px"}
+                    mr={"5px"}
                     colorScheme="#292e33"
                     // colorScheme="cyan"
-                    w={"110px"}
-                    fontSize={"20px"}
+                    w={"80px"}
+                    fontSize={"15px"}
                     color={"black"}
                     onClick={onClose}
                   >
@@ -84,15 +82,30 @@ export default function Hamburger() {
                 <Box>
                   <Button
                     mt={"10px"}
-                    mr={"10px"}
+                    mr={"5px"}
                     colorScheme="#292e33"
                     // colorScheme="cyan"s
-                    w={"100px"}
-                    fontSize={"20px"}
+                    w={"80px"}
+                    fontSize={"15px"}
                     color={"black"}
                     onClick={onClose}
                   >
                     Project
+                  </Button>
+                </Box>
+              </Link>
+              <Link to="experience" smooth={true}>
+                <Box>
+                  <Button
+                    mt={"10px"}
+                    mr={"10px"}
+                    colorScheme="#292e33"
+                    w={"80px"}
+                    fontSize={"15px"}
+                    color={"black"}
+                    onClick={onClose}
+                  >
+                    Experience
                   </Button>
                 </Box>
               </Link>

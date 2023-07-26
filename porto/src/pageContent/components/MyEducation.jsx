@@ -13,7 +13,7 @@ export default function MyEducation() {
       <Box
         bgColor={"#292e33"}
         id="education"
-        h={{ base: "2000px", md: "1050px", lg: "1200px" }}
+        h={{ base: "1900px", md: "1050px", lg: "1200px" }}
         maxW={"100%"}
         fontFamily={"montserrat"}
       >
@@ -35,14 +35,14 @@ export default function MyEducation() {
                 </Text>
                 <Stack>
                   <Text
-                    mt={{ base: "20px", md: "30px", lg: "40px" }}
-                    fontSize={{ base: "24px", lg: "32px" }}
+                    mt={{ base: "15px", md: "30px", lg: "40px" }}
+                    fontSize={{ base: "16px", lg: "32px" }}
                     color={"white"}
                   >
                     SMK Negeri 05 Makassar
                   </Text>
                   <Text
-                    fontSize={{ base: "12px", lg: "16px" }}
+                    fontSize={{ base: "8px", lg: "16px" }}
                     mt={{ base: "10px", lg: "20px" }}
                     color={"white"}
                   >
@@ -50,13 +50,13 @@ export default function MyEducation() {
                   </Text>
                   <Text
                     mt={{ base: "10px", lg: "20px" }}
-                    fontSize={{ base: "24px", lg: "32px" }}
+                    fontSize={{ base: "16px", lg: "32px" }}
                     color={"white"}
                   >
                     Universitas Muslim Indonesia
                   </Text>
                   <Text
-                    fontSize={{ base: "12px", lg: "16px" }}
+                    fontSize={{ base: "8px", lg: "16px" }}
                     mt={{ base: "10px", lg: "20px" }}
                     color={"white"}
                   >
@@ -72,14 +72,14 @@ export default function MyEducation() {
                   Bootcamp
                 </Text>
                 <Text
-                  fontSize={{ base: "24px", lg: "32px" }}
+                  fontSize={{ base: "16px", lg: "32px" }}
                   mt={{ base: "20px", md: "30px", lg: "40px" }}
                   color={"white"}
                 >
                   Purwadhika Digital Technology School
                 </Text>
                 <Text
-                  fontSize={{ base: "12px", lg: "16px" }}
+                  fontSize={{ base: "8px", lg: "16px" }}
                   mt={{ base: "10px", lg: "20px" }}
                   color={"white"}
                 >
