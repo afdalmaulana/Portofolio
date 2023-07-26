@@ -27,6 +27,7 @@ export default function Project4() {
         <Stack>
           <Fade direction="left" cascade triggerOnce={true}>
             <Card
+              _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
               w={{ lg: "350px" }}
               maxh={{ base: "200px", lg: "480px" }}
               ml={{ base: "0px", lg: "30px" }}

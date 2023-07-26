@@ -26,13 +26,15 @@ export default function Skills() {
           ml={{ base: "30px", lg: "100px" }}
         >
           <Flex
+            mt={{ base: "20px" }}
             justify={"space-around"}
             wrap={"wrap"}
-            gap={5}
+            gap={2}
             className="myskill"
           >
             <Fade cascade={true} triggerOnce={true}>
               <Card
+                _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
@@ -59,6 +61,7 @@ export default function Skills() {
                   // opacity={0.}
                 ></Box>
                 <Box
+                  fontFamily={"montserrat"}
                   zIndex={2}
                   mt={{ base: "25px", md: "15px", lg: "5px" }}
                   ml={{ base: "5px", lg: "5px" }}
@@ -70,6 +73,7 @@ export default function Skills() {
                 </Box>
               </Card>
               <Card
+                _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
@@ -96,6 +100,7 @@ export default function Skills() {
                   // opacity={0.}
                 ></Box>
                 <Box
+                  fontFamily={"montserrat"}
                   zIndex={2}
                   mt={{ base: "25px", md: "15px", lg: "5px" }}
                   ml={{ base: "5px", lg: "5px" }}
@@ -107,6 +112,7 @@ export default function Skills() {
                 </Box>
               </Card>
               <Card
+                _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
@@ -133,6 +139,7 @@ export default function Skills() {
                   // opacity={0.}
                 ></Box>
                 <Box
+                  fontFamily={"montserrat"}
                   zIndex={2}
                   mt={{ base: "25px", md: "15px", lg: "5px" }}
                   ml={{ base: "5px", lg: "5px" }}
@@ -146,6 +153,7 @@ export default function Skills() {
                 </Box>
               </Card>
               <Card
+                _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
@@ -172,6 +180,7 @@ export default function Skills() {
                   // opacity={0.}
                 ></Box>
                 <Box
+                  fontFamily={"montserrat"}
                   zIndex={2}
                   mt={{ base: "25px", md: "15px", lg: "5px" }}
                   ml={{ base: "5px", lg: "5px" }}
@@ -183,6 +192,7 @@ export default function Skills() {
                 </Box>
               </Card>
               <Card
+                _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
@@ -209,6 +219,7 @@ export default function Skills() {
                   // opacity={0.}
                 ></Box>
                 <Box
+                  fontFamily={"montserrat"}
                   zIndex={2}
                   mt={{ base: "25px", md: "15px", lg: "5px" }}
                   ml={{ base: "5px", lg: "5px" }}
@@ -220,6 +231,7 @@ export default function Skills() {
                 </Box>
               </Card>
               <Card
+                _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
                 w={{ base: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
@@ -246,6 +258,7 @@ export default function Skills() {
                   // opacity={0.}
                 ></Box>
                 <Box
+                  fontFamily={"montserrat"}
                   zIndex={2}
                   mt={{ base: "25px", md: "15px", lg: "5px" }}
                   ml={{ base: "5px", lg: "5px" }}

@@ -27,6 +27,8 @@ export default function Project() {
         <Stack>
           <Fade cascade={true} triggerOnce={true}>
             <Card
+              fontFamily={"montserrat"}
+              _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
               w={{ lg: "350px" }}
               maxh={{ base: "200px", lg: "480px" }}
               ml={{ base: "0px", lg: "80px" }}
@@ -44,13 +46,13 @@ export default function Project() {
                   backgroundImage={"Goldenbook.png"}
                 ></Box>
                 <Stack mt="6" spacing="3">
-                  <Collapse startingHeight={30} in={show}>
+                  <Collapse startingHeight={20} in={show}>
                     <Heading size={{ base: "sm", lg: "md" }}>
                       Golden Book
                     </Heading>
                     <Text
                       align={"justify"}
-                      fontSize={{ base: "12px", lg: "16px" }}
+                      fontSize={{ base: "8px", lg: "12px" }}
                     >
                       This project is an example of a website for reading
                       articles or blogs. The reading of the articles contained

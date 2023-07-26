@@ -13,8 +13,9 @@ export default function MyEducation() {
       <Box
         bgColor={"#292e33"}
         id="education"
-        h={{ base: "1850px", md: "1050px", lg: "1200px" }}
+        h={{ base: "2000px", md: "1050px", lg: "1200px" }}
         maxW={"100%"}
+        fontFamily={"montserrat"}
       >
         {/* "#292e33" */}
         <Stack
@@ -26,9 +27,9 @@ export default function MyEducation() {
             <Fade direction="down" cascade={true} triggerOnce={true}>
               <Box>
                 <Text
-                  color={"#8e7f6e"}
+                  color={"#E9B785"}
                   fontSize={{ base: "24px" }}
-                  mt={{ base: "40px", md: "50px", lg: "80px" }}
+                  mt={{ base: "50px", md: "50px", lg: "80px" }}
                 >
                   Education
                 </Text>
@@ -67,7 +68,7 @@ export default function MyEducation() {
                 mr={{ lg: "80px" }}
                 mt={{ sm: "5px", md: "20px", lg: "0px" }}
               >
-                <Text color={"#8e7f6e"} fontSize={"24px"} mt={"80px"}>
+                <Text color={"#E9B785"} fontSize={"24px"} mt={"80px"}>
                   Bootcamp
                 </Text>
                 <Text
@@ -107,9 +108,10 @@ export default function MyEducation() {
         <Stack id="project">
           <Text
             ml={{ base: "30px", lg: "100px" }}
-            color={"#8e7f6e"}
+            color={"#E9B785"}
             fontSize={{ sm: "24px", md: "48px", lg: "64px" }}
             mt={{ base: "100px", lg: "400px" }}
+            fontFamily={"montserrat"}
           >
             My Project
           </Text>

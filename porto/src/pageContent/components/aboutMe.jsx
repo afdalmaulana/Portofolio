@@ -18,13 +18,14 @@ export default function AboutMe() {
         id="about"
         className="aboutme"
         // bgColor={"#d8ccbe"}
-        bgColor={"#176B87"}
-        h={{ base: "800px", md: "650px", lg: "750px", xl: "800px" }}
+        bgColor={"#435B66"}
+        h={{ base: "800px", md: "650px", lg: "750px", xl: "850px" }}
       >
         <Stack>
           <Box
             ml={{ base: "30px", lg: "100px" }}
             mt={{ base: "50px", md: "60px", lg: "100px" }}
+            fontFamily={"montserrat"}
           >
             <Fade direction="up" cascade triggerOnce={true}>
               <Text

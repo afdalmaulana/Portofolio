@@ -2,6 +2,7 @@ import { Box, Button, Flex, Image, Stack, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Avatar from "./avatar";
 import ProfilePic from "./avatar";
+import Typewriter from "typewriter-effect";
 
 export default function Banner() {
   return (
@@ -20,17 +21,31 @@ export default function Banner() {
                 Hello, I'm
               </Text>
               <Text
-                fontSize={{ sm: "16px", md: "32px", lg: "56px" }}
+                fontSize={{ sm: "16px", md: "32px", lg: "48px" }}
                 fontWeight={"bold"}
+                fontFamily={"montserrat"}
               >
                 Muh. Afdal Maulana Said
               </Text>
-              <Text fontSize={{ sm: "8px", md: "24px", lg: "40px" }}>
-                Junior Software Developer
+              <Text
+                fontFamily={"montserrat"}
+                fontSize={{ sm: "8px", md: "24px", lg: "40px" }}
+              >
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Junior Frontend Developer",
+                      "Junior Software Developer",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
               </Text>
               <Text
                 fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
                 mt={"20px"}
+                fontFamily={"montserrat"}
               >
                 Follow me on :
               </Text>
@@ -38,6 +53,7 @@ export default function Banner() {
                 <Flex>
                   <Link to={"https://github.com/afdalmaulana"} target="_blank">
                     <Image
+                      _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
                       src="github.png"
                       w={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
                       h={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
@@ -48,6 +64,7 @@ export default function Banner() {
                     target="_blank"
                   >
                     <Image
+                      _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
                       ml={"10px"}
                       src="linked.png"
                       w={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
@@ -59,6 +76,7 @@ export default function Banner() {
                     target="_blank"
                   >
                     <Image
+                      _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
                       ml={"10px"}
                       src="instagram.png"
                       w={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}

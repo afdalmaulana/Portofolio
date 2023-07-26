@@ -6,37 +6,40 @@ export default function Motto() {
       <Box
         bgColor={"#292e33"}
         maxW={"100%"}
-        h={{ base: "", md: "", lg: "500px" }}
+        h={{ base: "", md: "", lg: "600px" }}
         className="strength"
       >
         <Box>
-          <Stack color={"#8e7f6e"}>
+          <Stack color={"#E9B785"}>
             <Text
               ml={{ base: "30px", md: "80px", lg: "100px" }}
-              fontSize={{ base: "16px", md: "24px", lg: "32px" }}
+              fontSize={{ base: "16px", md: "24px", lg: "40px" }}
               mt={{ base: "30px", md: "40px", lg: "80px" }}
+              fontFamily={"montserrat"}
             >
-              MY STRENGTH
+              My Strength
             </Text>
           </Stack>
           <Flex className="kekuatan" justify={"space-around"}>
             <Box
-              w={{ sm: "150px", md: "800px", lg: "600px" }}
+              w={{ sm: "150px", md: "800px", lg: "550px" }}
               color={"white"}
               ml={{ base: "30px", md: "80px", lg: "100px" }}
-              mr={{ base: "30px", md: "80px", lg: "0px" }}
+              mr={{ base: "30px", md: "80px", lg: "20px" }}
             >
               <Text
                 fontSize={{ base: "12px", md: "24px", lg: "40px" }}
-                mt={{ sm: "20px", md: "20px", lg: "10px" }}
+                mt={{ sm: "20px", md: "20px", lg: "25px" }}
+                fontFamily={"montserrat"}
               >
                 Ambition
               </Text>
               <Text
                 pt={"10px"}
                 align={"justify"}
-                fontSize={{ base: "8px", md: "24px", lg: "16px" }}
+                fontSize={{ base: "8px", md: "16px", lg: "16px" }}
                 mt={{ sm: "10px", md: "40px", lg: "16px" }}
+                fontFamily={"montserrat"}
               >
                 I am a person who is ready to get out of my comfort zone and is
                 not afraid to take risks, and is always ready to take advice. i
@@ -47,15 +50,16 @@ export default function Motto() {
               </Text>
             </Box>
             <Box
-              w={{ sm: "150px", md: "800px", lg: "800px" }}
-              ml={{ base: "30px", md: "50px", lg: "20px" }}
+              w={{ sm: "150px", md: "800px", lg: "550px" }}
+              ml={{ base: "30px", md: "50px", lg: "30px" }}
               mr={{ base: "30px", md: "80px", lg: "0px" }}
               mt={{ base: "30px", md: "80px", lg: "0px" }}
               color={"white"}
             >
               <Text
                 fontSize={{ base: "16px", md: "24px", lg: "40px" }}
-                mt={{ sm: "10px", md: "20px", lg: "10px" }}
+                mt={{ sm: "10px", md: "20px", lg: "25px" }}
+                fontFamily={"montserrat"}
               >
                 Precision
               </Text>
@@ -64,6 +68,7 @@ export default function Motto() {
                 fontSize={{ base: "8px", md: "24px", lg: "16px" }}
                 mt={{ base: "5px", md: "40px", lg: "16px" }}
                 pt={"10px"}
+                fontFamily={"montserrat"}
               >
                 I have always tried to perform every task with precision and
                 precision, because quality is the key to extraordinary results.
@@ -76,15 +81,16 @@ export default function Motto() {
               </Text>
             </Box>
             <Box
-              w={{ sm: "150px", md: "800px", lg: "500px" }}
-              ml={{ base: "30px", md: "50px", lg: "20px" }}
+              w={{ sm: "150px", md: "800px", lg: "550px" }}
+              ml={{ base: "30px", md: "50px", lg: "50px" }}
               mr={{ base: "30px", md: "80px", lg: "100px" }}
               mt={{ base: "30px", md: "80px", lg: "0px" }}
               color={"white"}
             >
               <Text
                 fontSize={{ base: "16px", md: "24px", lg: "40px" }}
-                mt={{ sm: "10px", md: "20px", lg: "10px" }}
+                mt={{ sm: "10px", md: "20px", lg: "25px" }}
+                fontFamily={"montserrat"}
               >
                 On Time
               </Text>
@@ -93,6 +99,7 @@ export default function Motto() {
                 fontSize={{ base: "8px", md: "24px", lg: "16px" }}
                 mt={{ base: "5px", md: "40px", lg: "16px" }}
                 pt={"10px"}
+                fontFamily={"montserrat"}
               >
                 The discipline in time helped me optimize productivity and
                 achieve goals more efficiently. Punctuality is one of the keys
