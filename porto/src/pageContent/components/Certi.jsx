@@ -9,6 +9,7 @@ export default function Certi() {
             <Text
               fontSize={{ base: "32px" }}
               mt={{ base: "50px", md: "50px", lg: "80px" }}
+              fontFamily={"bitter"}
             >
               My Certificate
             </Text>

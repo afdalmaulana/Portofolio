@@ -31,6 +31,7 @@ export default function AboutMe() {
               <Text
                 // color={"#60574c"}
                 color={"white"}
+                fontFamily={"bitter"}
                 fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
               >
                 A bit about me

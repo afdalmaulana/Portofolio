@@ -28,6 +28,7 @@ export default function MyEducation() {
               <Box>
                 <Text
                   color={"#E9B785"}
+                  fontFamily={"bitter"}
                   fontSize={{ base: "24px" }}
                   mt={{ base: "50px", md: "50px", lg: "80px" }}
                 >
@@ -68,7 +69,12 @@ export default function MyEducation() {
                 mr={{ lg: "80px" }}
                 mt={{ sm: "5px", md: "20px", lg: "0px" }}
               >
-                <Text color={"#E9B785"} fontSize={"24px"} mt={"80px"}>
+                <Text
+                  color={"#E9B785"}
+                  fontSize={"24px"}
+                  mt={"80px"}
+                  fontFamily={"bitter"}
+                >
                   Bootcamp
                 </Text>
                 <Text
@@ -111,7 +117,7 @@ export default function MyEducation() {
             color={"#E9B785"}
             fontSize={{ sm: "24px", md: "48px", lg: "64px" }}
             mt={{ base: "100px", lg: "400px" }}
-            fontFamily={"montserrat"}
+            fontFamily={"bitter"}
           >
             My Project
           </Text>

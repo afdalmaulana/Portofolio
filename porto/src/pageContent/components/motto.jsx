@@ -15,7 +15,7 @@ export default function Motto() {
               ml={{ base: "30px", md: "80px", lg: "100px" }}
               fontSize={{ base: "16px", md: "24px", lg: "40px" }}
               mt={{ base: "30px", md: "40px", lg: "80px" }}
-              fontFamily={"montserrat"}
+              fontFamily={"bitter"}
             >
               My Strength
             </Text>

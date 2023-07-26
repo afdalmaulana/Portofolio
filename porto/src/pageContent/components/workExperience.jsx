@@ -12,7 +12,7 @@ export default function WorkExperience() {
   return (
     <>
       <Box
-        bgColor={"#212A3E"}
+        bgColor={"#04293A"}
         id="experience"
         h={{ base: "1200px", md: "500px", lg: "1000px" }}
         fontFamily={"montserrat"}
@@ -23,6 +23,7 @@ export default function WorkExperience() {
               mt={"300px"}
               fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
               color={"#E9B785"}
+              fontFamily={"bitter"}
             >
               EXPERIENCE
             </Text>
@@ -33,6 +34,7 @@ export default function WorkExperience() {
                     color={"#E9B785"}
                     fontSize={{ base: "24px" }}
                     mt={{ base: "40px", md: "50px", lg: "80px" }}
+                    fontFamily={"bitter"}
                   >
                     Internship
                   </Text>
@@ -96,6 +98,7 @@ export default function WorkExperience() {
                     color={"#E9B785"}
                     fontSize={"24px"}
                     mt={{ base: "40px", md: "50px", lg: "90px" }}
+                    fontFamily={"bitter"}
                   >
                     Part-time
                   </Text>

@@ -12,10 +12,9 @@ export default function Education() {
           <Button
             mt={"10px"}
             mr={"10px"}
-            colorScheme={"gray"}
+            colorScheme="green"
             w={{ base: "0px", md: "75px", lg: "100px" }}
             fontSize={{ base: "0px", md: "12px", lg: "15px" }}
-            variant={"outline"}
           >
             Education
           </Button>

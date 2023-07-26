@@ -1,10 +1,28 @@
-import { Box, Button, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Image,
+  Stack,
+  Text,
+  useDisclosure,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Avatar from "./avatar";
 import ProfilePic from "./avatar";
 import Typewriter from "typewriter-effect";
+import { HiOutlineMail } from "react-icons/hi";
+import { BiPhoneCall } from "react-icons/bi";
 
 export default function Banner() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Box bgColor={"#073b4c"} h={{ base: "250px", md: "480", lg: "720px" }}>
@@ -17,7 +35,10 @@ export default function Banner() {
               className="banner"
               w={{ base: "230px", md: "400px", lg: "640px" }}
             >
-              <Text fontSize={{ sm: "12px", md: "20px", lg: "30px" }}>
+              <Text
+                fontSize={{ sm: "12px", md: "20px", lg: "30px" }}
+                fontFamily={"montserrat"}
+              >
                 Hello, I'm
               </Text>
               <Text
@@ -39,6 +60,7 @@ export default function Banner() {
                     ],
                     autoStart: true,
                     loop: true,
+                    speed: 1000,
                   }}
                 />
               </Text>
@@ -85,6 +107,45 @@ export default function Banner() {
                   </Link>
                 </Flex>
               </section>
+              <Button
+                mt={{ base: "10px", lg: "50px" }}
+                w={{ base: "85px", lg: "200px" }}
+                h={{ base: "20px", lg: "50px" }}
+                onClick={onOpen}
+                fontSize={{ base: "6px", lg: "16px" }}
+                fontFamily={"montserrat"}
+                leftIcon={<HiOutlineMail />}
+                rightIcon={<BiPhoneCall />}
+                borderRadius={{ base: "5px", lg: "10px" }}
+                bgColor={"black"}
+                variant={""}
+                color={"white"}
+              >
+                Get in touch
+              </Button>
+              <Modal isOpen={isOpen} onClose={onClose}>
+                <ModalOverlay />
+                <ModalContent bgColor={"#435B66"} color={"white"}>
+                  <ModalHeader>My Contact</ModalHeader>
+                  <ModalCloseButton />
+                  <ModalBody>
+                    <Stack
+                      fontFamily={"montserrat"}
+                      fontWeight={"bold"}
+                      color={"white"}
+                    >
+                      <Text>08124214977</Text>
+                      <Text>afdalmaulanaaa@gmail.com</Text>
+                    </Stack>
+                  </ModalBody>
+
+                  <ModalFooter>
+                    <Button colorScheme="red" mr={3} onClick={onClose}>
+                      Close
+                    </Button>
+                  </ModalFooter>
+                </ModalContent>
+              </Modal>
             </Box>
             <ProfilePic />
           </Flex>

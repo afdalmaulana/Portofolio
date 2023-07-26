@@ -10,7 +10,8 @@ export default function Navbar() {
   return (
     <>
       <Box
-        bgColor={"grey"}
+        // bgColor={"grey"}
+        bgColor={"#2C3333"}
         w={"100%"}
         h={{ base: "60px" }}
         // h={"200px"}
