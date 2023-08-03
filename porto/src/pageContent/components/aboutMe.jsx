@@ -27,7 +27,7 @@ export default function AboutMe() {
             mt={{ base: "50px", md: "60px", lg: "100px" }}
             fontFamily={"montserrat"}
           >
-            <Fade direction="up" cascade triggerOnce={true}>
+            <Fade direction="up" cascade={true} triggerOnce={true}>
               <Text
                 // color={"#60574c"}
                 color={"white"}
@@ -77,7 +77,9 @@ export default function AboutMe() {
             </Fade>
           </Box>
         </Stack>
-        <Skills />
+        <Fade cascade={true} triggerOnce={true}>
+          <Skills />
+        </Fade>
       </Box>
     </>
   );

@@ -21,7 +21,7 @@ export default function WorkExperience() {
           <Box>
             <Text
               mt={"300px"}
-              fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
+              fontSize={{ sm: "24px", md: "24px", lg: "32px" }}
               color={"#E9B785"}
               fontFamily={"bitter"}
             >
@@ -32,7 +32,7 @@ export default function WorkExperience() {
                 <Box>
                   <Text
                     color={"#E9B785"}
-                    fontSize={{ base: "24px" }}
+                    fontSize={{ base: "16px", lg: "24px" }}
                     mt={{ base: "40px", md: "50px", lg: "80px" }}
                     fontFamily={"bitter"}
                   >
@@ -96,7 +96,7 @@ export default function WorkExperience() {
                 <Box mr={"50px"}>
                   <Text
                     color={"#E9B785"}
-                    fontSize={"24px"}
+                    fontSize={{ base: "16px", lg: "24px" }}
                     mt={{ base: "40px", md: "50px", lg: "90px" }}
                     fontFamily={"bitter"}
                   >

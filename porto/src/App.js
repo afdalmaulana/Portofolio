@@ -7,7 +7,7 @@ import Home from './Landing/Home';
 import Stopwatch from './components/Stopwatch';
 import Calculator from './components/Calculator';
 
-import "./style/main.css"
+// import "./style/main.css"
 
 function App() {
   return (

@@ -1,4 +1,11 @@
-import { Box, ButtonGroup, Flex, Spacer, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  ButtonGroup,
+  Flex,
+  Spacer,
+  Stack,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import Education from "./components/Education";
 import Title from "./components/title";
 import AboutMe from "./components/buttonAboutMe";
@@ -7,6 +14,7 @@ import Hamburger from "./components/hamburger";
 import ButtonExpe from "./components/buttonExperience";
 
 export default function Navbar() {
+  const [isLargerThanMD] = useMediaQuery("(min-width: 48em)");
   return (
     <>
       <Box
@@ -24,19 +32,22 @@ export default function Navbar() {
           <Title />
           <Spacer />
           <ButtonGroup>
-            <Flex
-              className="dekstop"
-              justify={"space-between"}
-              fontFamily={"montserrat"}
-            >
-              <AboutMe />
-              <Education />
-              <MyProject />
-              <ButtonExpe />
-            </Flex>
-            <Box className="mobile">
-              <Hamburger />
-            </Box>
+            {isLargerThanMD ? (
+              <Flex
+                className="dekstop"
+                justify={"space-between"}
+                fontFamily={"montserrat"}
+              >
+                <AboutMe />
+                <Education />
+                <MyProject />
+                <ButtonExpe />
+              </Flex>
+            ) : (
+              <Box className="mobile">
+                <Hamburger />
+              </Box>
+            )}
           </ButtonGroup>
         </Flex>
       </Box>

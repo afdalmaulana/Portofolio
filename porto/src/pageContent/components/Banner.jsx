@@ -48,22 +48,27 @@ export default function Banner() {
               >
                 Muh. Afdal Maulana Said
               </Text>
-              <Text
-                fontFamily={"montserrat"}
-                fontSize={{ sm: "8px", md: "24px", lg: "40px" }}
-              >
-                <Typewriter
-                  options={{
-                    strings: [
-                      "Junior Frontend Developer",
-                      "Junior Software Developer",
-                    ],
-                    autoStart: true,
-                    loop: true,
-                    speed: 1000,
-                  }}
-                />
-              </Text>
+              <Flex gap={"2"}>
+                <Text
+                  fontFamily={"montserrat"}
+                  fontSize={{ sm: "8px", md: "24px", lg: "40px" }}
+                >
+                  Junior
+                </Text>
+                <Text
+                  fontFamily={"montserrat"}
+                  fontSize={{ sm: "8px", md: "24px", lg: "40px" }}
+                >
+                  <Typewriter
+                    options={{
+                      strings: [" Web Developer", " Frontend Developer"],
+                      autoStart: true,
+                      loop: true,
+                      speed: 1000,
+                    }}
+                  />
+                </Text>
+              </Flex>
               <Text
                 fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
                 mt={"20px"}
