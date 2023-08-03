@@ -120,7 +120,6 @@ export default function Banner() {
                 fontSize={{ base: "6px", lg: "16px" }}
                 fontFamily={"montserrat"}
                 leftIcon={<HiOutlineMail />}
-                rightIcon={<BiPhoneCall />}
                 borderRadius={{ base: "5px", lg: "10px" }}
                 bgColor={"black"}
                 variant={""}
