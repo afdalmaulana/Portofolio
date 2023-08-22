@@ -36,7 +36,12 @@ export default function Banner() {
               className="banner"
               w={{ base: "300px", md: "400px", lg: "640px" }}
             >
-              <Fade direction="down" fraction={1} cascade={true}>
+              <Fade
+                triggerOnce={true}
+                direction="down"
+                fraction={1}
+                cascade={true}
+              >
                 <Text
                   fontSize={{ sm: "12px", md: "20px", lg: "30px" }}
                   fontFamily={"montserrat"}
@@ -52,7 +57,12 @@ export default function Banner() {
                 </Text>
               </Fade>
               <Flex gap={"2"}>
-                <Fade direction="up" delay={1000} cascade={true}>
+                <Fade
+                  direction="up"
+                  triggerOnce={true}
+                  delay={1000}
+                  cascade={true}
+                >
                   <Text
                     fontFamily={"montserrat"}
                     fontSize={{ sm: "8px", md: "24px", lg: "40px" }}
@@ -74,7 +84,12 @@ export default function Banner() {
                   </Text>
                 </Fade>
               </Flex>
-              <Fade direction="down" cascade={true} delay={2000}>
+              <Fade
+                direction="down"
+                triggerOnce={true}
+                cascade={true}
+                delay={2000}
+              >
                 <Text
                   fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
                   mt={"20px"}
@@ -152,7 +167,7 @@ export default function Banner() {
                   </Flex>
                 </section>
               </Fade>
-              <Fade delay={3000} cascade={true}>
+              <Fade delay={3000} triggerOnce={true} cascade={true}>
                 <Flex>
                   <Button
                     mt={{ base: "10px", lg: "50px" }}
@@ -218,7 +233,7 @@ export default function Banner() {
                 </ModalContent>
               </Modal>
             </Box>
-            <Fade delay={3000}>
+            <Fade delay={3000} triggerOnce={true}>
               <ProfilePic />
             </Fade>
           </Flex>

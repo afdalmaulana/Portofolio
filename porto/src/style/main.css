@@ -20,6 +20,15 @@
         flex-wrap: wrap;
     } */
   }
+
+  .navvbar {
+    position: fixed;
+    transition: 0.3 ease-in-out;
+  }
+  .nav-active{
+    background-color: aliceblue;
+    box-shadow: 5px -1px 12px -5px grey;
+  }
 @media only screen and (max-width: 600px) {
     .dekstop{
         display: flex;

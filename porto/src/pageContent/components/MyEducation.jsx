@@ -122,7 +122,7 @@ export default function MyEducation() {
           <Box
             w={{ sm: "350px", md: "800px", lg: "1240px" }}
             mr={{ base: "30px", md: "80px", lg: "0px" }}
-            ml={{ base: "30px", md: "30px", lg: "140px" }}
+            ml={{ base: "30px", md: "30px", lg: "160px" }}
             h={{ base: "150px", md: "800px", lg: "600px" }}
           >
             <Flex
