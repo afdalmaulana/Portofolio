@@ -24,7 +24,7 @@ export default function Motto() {
             <Box
               w={{ sm: "150px", md: "900px", lg: "550px" }}
               color={"white"}
-              ml={{ base: "30px", md: "40px", lg: "100px" }}
+              ml={{ base: "30px", md: "40px", lg: "80px" }}
               mr={{ base: "30px", md: "80px", lg: "60px" }}
             >
               <Text
@@ -51,7 +51,7 @@ export default function Motto() {
             </Box>
             <Box
               w={{ sm: "150px", md: "900px", lg: "550px" }}
-              ml={{ base: "30px", md: "40px", lg: "-24px" }}
+              ml={{ base: "30px", md: "40px", lg: "-32px" }}
               mr={{ base: "30px", md: "80px", lg: "0px" }}
               mt={{ base: "10px", md: "20px", lg: "0px" }}
               color={"white"}
