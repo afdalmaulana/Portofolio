@@ -22,7 +22,7 @@ export default function Skills() {
       >
         <Box
           mr={{ base: 10, md: 100, lg: 100 }}
-          w={{ sm: "100px", lg: "1240px" }}
+          w={{ sm: "100px", md: "900px", lg: "1240px" }}
           ml={{ base: "30px", lg: "100px" }}
         >
           <Flex
@@ -35,7 +35,7 @@ export default function Skills() {
             <Fade cascade={true} triggerOnce={true}>
               <Card
                 _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-                w={{ base: "100px", lg: "150px" }}
+                w={{ base: "100px", sm: "", md: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
                 bgColor={"whiteAlpha.800"}
@@ -74,7 +74,7 @@ export default function Skills() {
               </Card>
               <Card
                 _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-                w={{ base: "100px", lg: "150px" }}
+                w={{ base: "100px", sm: "", md: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
                 bgColor={"whiteAlpha.800"}
@@ -113,7 +113,7 @@ export default function Skills() {
               </Card>
               <Card
                 _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-                w={{ base: "100px", lg: "150px" }}
+                w={{ base: "100px", sm: "", md: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
                 bgColor={"whiteAlpha.800"}
@@ -154,7 +154,7 @@ export default function Skills() {
               </Card>
               <Card
                 _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-                w={{ base: "100px", lg: "150px" }}
+                w={{ base: "100px", sm: "", md: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
                 bgColor={"whiteAlpha.800"}
@@ -193,7 +193,7 @@ export default function Skills() {
               </Card>
               <Card
                 _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-                w={{ base: "100px", lg: "150px" }}
+                w={{ base: "100px", sm: "", md: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
                 bgColor={"whiteAlpha.800"}
@@ -232,7 +232,7 @@ export default function Skills() {
               </Card>
               <Card
                 _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-                w={{ base: "100px", lg: "150px" }}
+                w={{ base: "100px", sm: "", md: "100px", lg: "150px" }}
                 h={{ base: "165px", lg: "250px" }}
                 borderRadius={"10px"}
                 bgColor={"whiteAlpha.800"}

@@ -12,7 +12,7 @@ export default function Title() {
             // mt={"5px"}
             fontFamily={"bitter"}
           >
-            Portofolio
+            Portfolio
           </Text>
         </Box>
       </Link>

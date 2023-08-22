@@ -12,7 +12,8 @@ export default function WorkExperience() {
   return (
     <>
       <Box
-        bgColor={"#04293A"}
+        // bgColor={"#04293A"}
+        bgColor={"#073b4c"}
         id="experience"
         h={{ base: "1200px", md: "500px", lg: "1000px" }}
         fontFamily={"montserrat"}
@@ -20,7 +21,7 @@ export default function WorkExperience() {
         <Stack ml={{ base: "30px", md: "80px", lg: "100px" }}>
           <Box>
             <Text
-              mt={"300px"}
+              mt={{ base: "20px", sm: "200px", md: "250px", lg: "300px" }}
               fontSize={{ sm: "24px", md: "24px", lg: "32px" }}
               color={"#E9B785"}
               fontFamily={"bitter"}

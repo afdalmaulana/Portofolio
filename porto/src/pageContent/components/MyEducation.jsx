@@ -44,13 +44,13 @@ export default function MyEducation() {
                   </Text>
                   <Text
                     fontSize={{ base: "8px", lg: "16px" }}
-                    mt={{ base: "10px", lg: "20px" }}
+                    mt={{ base: "0px", md: "10px", lg: "20px" }}
                     color={"white"}
                   >
                     2013 - 2017 Informatics Engineering
                   </Text>
                   <Text
-                    mt={{ base: "10px", lg: "20px" }}
+                    mt={{ base: "10px", md: "10px", lg: "20px" }}
                     fontSize={{ base: "16px", lg: "32px" }}
                     color={"white"}
                   >
@@ -58,21 +58,18 @@ export default function MyEducation() {
                   </Text>
                   <Text
                     fontSize={{ base: "8px", lg: "16px" }}
-                    mt={{ base: "10px", lg: "20px" }}
+                    mt={{ base: "0px", md: "10px", lg: "20px" }}
                     color={"white"}
                   >
                     2017 - 2023 Informatics Engineering
                   </Text>
                 </Stack>
               </Box>
-              <Box
-                mr={{ lg: "80px" }}
-                mt={{ sm: "5px", md: "20px", lg: "0px" }}
-              >
+              <Box mr={{ lg: "80px" }}>
                 <Text
                   color={"#E9B785"}
                   fontSize={"24px"}
-                  mt={"80px"}
+                  mt={{ base: "50px", md: "50px", lg: "80px" }}
                   fontFamily={"bitter"}
                 >
                   Bootcamp
@@ -86,14 +83,14 @@ export default function MyEducation() {
                 </Text>
                 <Text
                   fontSize={{ base: "8px", lg: "16px" }}
-                  mt={{ base: "10px", lg: "20px" }}
+                  mt={{ base: "0px", sm: "10px", lg: "20px" }}
                   color={"white"}
                 >
                   May, 2023 - August 2023
                 </Text>
                 <Stack
                   fontSize={{ base: "12px", lg: "16px" }}
-                  mt={{ base: "10px", lg: "20px" }}
+                  mt={{ base: "20px", md: "", lg: "20px" }}
                   color={"white"}
                 >
                   <Text>
@@ -125,7 +122,7 @@ export default function MyEducation() {
           <Box
             w={{ sm: "350px", md: "800px", lg: "1240px" }}
             mr={{ base: "30px", md: "80px", lg: "0px" }}
-            ml={{ base: "30px", md: "80px", lg: "100px" }}
+            ml={{ base: "30px", md: "30px", lg: "160px" }}
             h={{ base: "150px", md: "800px", lg: "600px" }}
           >
             <Flex

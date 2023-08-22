@@ -2,6 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
 
+
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+    /* .hamburger {
+        visibility: hidden;
+        opacity: 1;
+        position: absolute;
+    } */
+    .kekuatan{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    /* .myskill{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */
+  }
 @media only screen and (max-width: 600px) {
     .dekstop{
         display: flex;
@@ -13,12 +31,12 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .myskill{
+    /* .myskill{
         display: flex;
         flex-wrap: wrap;
-    }
+    } */
     .strength{
-        height: 450px;
+        height: 360px;
     }
     .education{
         display: flex;
@@ -52,9 +70,8 @@
         visibility: hidden;
         opacity: 1;
         position: absolute;
-    }
-    
-}
+    }   
+} 
 
 /* @media only screen and (max-width: 768px){
     .education{

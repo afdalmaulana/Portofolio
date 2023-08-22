@@ -28,16 +28,16 @@ export default function Project3() {
             <Card
               fontFamily={"montserrat"}
               _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-              w={{ lg: "350px" }}
-              maxh={{ base: "200px", lg: "480px" }}
-              ml={{ base: "0px", lg: "30px" }}
-              mt={{ base: "40px", lg: "40px" }}
+              w={{ md: "320px", lg: "350px" }}
+              maxh={{ base: "200px", md: "200px", lg: "480px" }}
+              ml={{ base: "0px", md: "24px", lg: "40px" }}
+              mt={{ base: "20px", lg: "40px" }}
               bgColor={"white"}
               borderRadius={"20px"}
             >
               <CardBody>
                 <Box
-                  height={"200px"}
+                  height={{ base: "100px", md: "150px", lg: "200px" }}
                   position="relative"
                   backgroundPosition="center"
                   backgroundRepeat="no-repeat"
@@ -46,7 +46,7 @@ export default function Project3() {
                   backgroundImage={"timer.png"}
                 ></Box>
                 <Stack mt="6" spacing="3">
-                  <Collapse startingHeight={30} in={show}>
+                  <Collapse startingHeight={20} in={show}>
                     <Heading size="md">Stopwatch</Heading>
                     This project is fundamental javascript making a stopwatch
                   </Collapse>

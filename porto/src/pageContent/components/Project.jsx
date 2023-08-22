@@ -29,9 +29,9 @@ export default function Project() {
             <Card
               fontFamily={"montserrat"}
               _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-              w={{ lg: "350px" }}
-              maxh={{ base: "200px", lg: "480px" }}
-              ml={{ base: "0px", lg: "80px" }}
+              w={{ md: "320px", lg: "350px" }}
+              maxh={{ base: "200px", md: "200px", lg: "480px" }}
+              ml={{ base: "0px", md: "50px", lg: "80px" }}
               mt={{ base: "20px", lg: "40px" }}
               bgColor={"white"}
               borderRadius={"20px"}

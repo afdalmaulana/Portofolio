@@ -28,9 +28,9 @@ export default function Project4() {
           <Fade direction="left" cascade triggerOnce={true}>
             <Card
               _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-              w={{ lg: "350px" }}
+              w={{ md: "320px", lg: "350px" }}
               maxh={{ base: "200px", lg: "480px" }}
-              ml={{ base: "0px", lg: "30px" }}
+              ml={{ base: "0px", lg: "40px" }}
               mt={{ base: "40px", lg: "40px" }}
               bgColor={"white"}
               borderRadius={"20px"}

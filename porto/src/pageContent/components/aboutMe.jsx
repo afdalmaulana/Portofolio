@@ -19,11 +19,11 @@ export default function AboutMe() {
         className="aboutme"
         // bgColor={"#d8ccbe"}
         bgColor={"#435B66"}
-        h={{ base: "800px", md: "650px", lg: "750px", xl: "850px" }}
+        h={{ base: "800px", md: "550px", lg: "750px", xl: "850px" }}
       >
         <Stack>
           <Box
-            ml={{ base: "30px", lg: "100px" }}
+            ml={{ base: "30px", md: "40px", lg: "100px" }}
             mt={{ base: "50px", md: "60px", lg: "100px" }}
             fontFamily={"montserrat"}
           >
@@ -32,20 +32,20 @@ export default function AboutMe() {
                 // color={"#60574c"}
                 color={"white"}
                 fontFamily={"bitter"}
-                fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
+                fontSize={{ sm: "16px", md: "16px", lg: "32px" }}
               >
                 A bit about me
               </Text>
               <Text
                 color={"white"}
-                fontSize={{ sm: "24px", md: "32px", lg: "64px" }}
+                fontSize={{ base: "32px", sm: "32px", md: "32px", lg: "64px" }}
               >
                 Who am I ?
               </Text>
               <Box
                 // ml={{ md: 2 }}
                 mr={{ base: 10, md: 100, lg: 100 }}
-                w={{ sm: "350px", md: "800px", lg: "1240px" }}
+                w={{ sm: "350px", md: "900px", lg: "1240px" }}
               >
                 <Text
                   align={"justify"}

@@ -32,6 +32,7 @@ export default function Hamburger() {
           mr={"10px"}
           icon={<GiHamburgerMenu />}
           onClick={onOpen}
+          bgColor={"#073b4c"}
           ref={btnRef}
         ></IconButton>
       </Box>

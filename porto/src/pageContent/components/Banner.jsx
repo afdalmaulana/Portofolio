@@ -19,7 +19,7 @@ import Avatar from "./avatar";
 import ProfilePic from "./avatar";
 import Typewriter from "typewriter-effect";
 import { HiOutlineMail } from "react-icons/hi";
-import { BiPhoneCall } from "react-icons/bi";
+import { AiOutlineFileSearch } from "react-icons/ai";
 
 export default function Banner() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -30,10 +30,10 @@ export default function Banner() {
           <Flex>
             <Box
               mt={{ base: "50px", md: "40px", lg: "100px" }}
-              ml={{ base: "30px", md: "80px", lg: "100px" }}
+              ml={{ base: "30px", md: "40px", lg: "100px" }}
               color={"white"}
               className="banner"
-              w={{ base: "230px", md: "400px", lg: "640px" }}
+              w={{ base: "300px", md: "400px", lg: "640px" }}
             >
               <Text
                 fontSize={{ sm: "12px", md: "20px", lg: "30px" }}
@@ -127,6 +127,28 @@ export default function Banner() {
               >
                 Get in touch
               </Button>
+              <Link
+                to={
+                  "https://drive.google.com/file/d/1i9q4CWWO8n00DGjAZg2xBdma8vo7ETJs/view?usp=drive_link"
+                }
+                target="_blank"
+              >
+                <Button
+                  mt={{ base: "10px", lg: "50px" }}
+                  ml={{ base: "5px", md: "20px", lg: "30px" }}
+                  w={{ base: "120px", lg: "200px" }}
+                  h={{ base: "20px", lg: "50px" }}
+                  fontSize={{ base: "6px", lg: "16px" }}
+                  leftIcon={<AiOutlineFileSearch />}
+                  borderRadius={{ base: "5px", lg: "10px" }}
+                  fontFamily={"montserrat"}
+                  bgColor={"black"}
+                  variant={""}
+                  color={"white"}
+                >
+                  Curriculum Vitae
+                </Button>
+              </Link>
               <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent bgColor={"#435B66"} color={"white"}>
