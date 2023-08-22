@@ -37,7 +37,7 @@ export default function Motto() {
               <Text
                 // pt={"10px"}
                 align={"justify"}
-                fontSize={{ base: "8px", md: "16px", lg: "16px" }}
+                fontSize={{ base: "8px", md: "16px", lg: "14px" }}
                 mt={{ sm: "0px", md: "10px", lg: "16px" }}
                 fontFamily={"montserrat"}
               >
@@ -51,7 +51,7 @@ export default function Motto() {
             </Box>
             <Box
               w={{ sm: "150px", md: "900px", lg: "550px" }}
-              ml={{ base: "30px", md: "40px", lg: "-20px" }}
+              ml={{ base: "30px", md: "40px", lg: "-24px" }}
               mr={{ base: "30px", md: "80px", lg: "0px" }}
               mt={{ base: "10px", md: "20px", lg: "0px" }}
               color={"white"}
@@ -66,7 +66,7 @@ export default function Motto() {
               <Text
                 // pt={"10px"}
                 align={"justify"}
-                fontSize={{ base: "8px", md: "16px", lg: "16px" }}
+                fontSize={{ base: "8px", md: "16px", lg: "14px" }}
                 mt={{ sm: "10px", md: "10px", lg: "16px" }}
                 fontFamily={"montserrat"}
               >
@@ -97,7 +97,7 @@ export default function Motto() {
               <Text
                 // pt={"10px"}
                 align={"justify"}
-                fontSize={{ base: "8px", md: "16px", lg: "16px" }}
+                fontSize={{ base: "8px", md: "16px", lg: "14px" }}
                 mt={{ sm: "0px", md: "10px", lg: "16px" }}
                 mr={{ sm: "", lg: "40px" }}
                 fontFamily={"montserrat"}

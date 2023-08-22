@@ -20,6 +20,7 @@ import ProfilePic from "./avatar";
 import Typewriter from "typewriter-effect";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineFileSearch } from "react-icons/ai";
+import { Fade } from "react-awesome-reveal";
 
 export default function Banner() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -35,120 +36,164 @@ export default function Banner() {
               className="banner"
               w={{ base: "300px", md: "400px", lg: "640px" }}
             >
-              <Text
-                fontSize={{ sm: "12px", md: "20px", lg: "30px" }}
-                fontFamily={"montserrat"}
-              >
-                Hello, I'm
-              </Text>
-              <Text
-                fontSize={{ sm: "16px", md: "32px", lg: "48px" }}
-                fontWeight={"bold"}
-                fontFamily={"montserrat"}
-              >
-                Muh. Afdal Maulana Said
-              </Text>
+              <Fade direction="down" fraction={1} cascade={true}>
+                <Text
+                  fontSize={{ sm: "12px", md: "20px", lg: "30px" }}
+                  fontFamily={"montserrat"}
+                >
+                  Hello, I'm
+                </Text>
+                <Text
+                  fontSize={{ sm: "16px", md: "32px", lg: "48px" }}
+                  fontWeight={"bold"}
+                  fontFamily={"montserrat"}
+                >
+                  Muh. Afdal Maulana Said
+                </Text>
+              </Fade>
               <Flex gap={"2"}>
-                <Text
-                  fontFamily={"montserrat"}
-                  fontSize={{ sm: "8px", md: "24px", lg: "40px" }}
-                >
-                  Junior
-                </Text>
-                <Text
-                  fontFamily={"montserrat"}
-                  fontSize={{ sm: "8px", md: "24px", lg: "40px" }}
-                >
-                  <Typewriter
-                    options={{
-                      strings: [" Web Developer", " Frontend Developer"],
-                      autoStart: true,
-                      loop: true,
-                      speed: 1000,
-                    }}
-                  />
-                </Text>
+                <Fade direction="up" delay={1000} cascade={true}>
+                  <Text
+                    fontFamily={"montserrat"}
+                    fontSize={{ sm: "8px", md: "24px", lg: "40px" }}
+                  >
+                    Junior
+                  </Text>
+                  <Text
+                    fontFamily={"montserrat"}
+                    fontSize={{ sm: "8px", md: "24px", lg: "40px" }}
+                  >
+                    <Typewriter
+                      options={{
+                        strings: [" Web Developer", " Frontend Developer"],
+                        autoStart: true,
+                        loop: true,
+                        speed: 1000,
+                      }}
+                    />
+                  </Text>
+                </Fade>
               </Flex>
-              <Text
-                fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
-                mt={"20px"}
-                fontFamily={"montserrat"}
-              >
-                Follow me on :
-              </Text>
-              <section>
+              <Fade direction="down" cascade={true} delay={2000}>
+                <Text
+                  fontSize={{ sm: "16px", md: "24px", lg: "32px" }}
+                  mt={"20px"}
+                  fontFamily={"montserrat"}
+                >
+                  Follow me on :
+                </Text>
+                <section>
+                  <Flex>
+                    <Link
+                      to={"https://github.com/afdalmaulana"}
+                      target="_blank"
+                    >
+                      <Image
+                        _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
+                        src="github.png"
+                        w={{
+                          base: "35px",
+                          md: "40px",
+                          lg: "80px",
+                          xl: "100px",
+                        }}
+                        h={{
+                          base: "35px",
+                          md: "40px",
+                          lg: "80px",
+                          xl: "100px",
+                        }}
+                      ></Image>
+                    </Link>
+                    <Link
+                      to={"https://www.linkedin.com/in/muhafdalmaulanasaid/"}
+                      target="_blank"
+                    >
+                      <Image
+                        _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
+                        ml={"10px"}
+                        src="linked.png"
+                        w={{
+                          base: "35px",
+                          md: "40px",
+                          lg: "80px",
+                          xl: "100px",
+                        }}
+                        h={{
+                          base: "35px",
+                          md: "40px",
+                          lg: "80px",
+                          xl: "100px",
+                        }}
+                      ></Image>
+                    </Link>
+                    <Link
+                      to={"https://www.instagram.com/afdalmaulanaaa/"}
+                      target="_blank"
+                    >
+                      <Image
+                        _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
+                        ml={"10px"}
+                        src="instagram.png"
+                        w={{
+                          base: "35px",
+                          md: "40px",
+                          lg: "80px",
+                          xl: "100px",
+                        }}
+                        h={{
+                          base: "35px",
+                          md: "40px",
+                          lg: "80px",
+                          xl: "100px",
+                        }}
+                      ></Image>
+                    </Link>
+                  </Flex>
+                </section>
+              </Fade>
+              <Fade delay={3000} cascade={true}>
                 <Flex>
-                  <Link to={"https://github.com/afdalmaulana"} target="_blank">
-                    <Image
-                      _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-                      src="github.png"
-                      w={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
-                      h={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
-                    ></Image>
-                  </Link>
+                  <Button
+                    mt={{ base: "10px", lg: "50px" }}
+                    w={{ base: "85px", lg: "200px" }}
+                    h={{ base: "20px", lg: "50px" }}
+                    onClick={onOpen}
+                    fontSize={{ base: "6px", lg: "16px" }}
+                    fontFamily={"montserrat"}
+                    leftIcon={<HiOutlineMail />}
+                    borderRadius={{ base: "5px", lg: "10px" }}
+                    bgColor={"black"}
+                    variant={""}
+                    color={"white"}
+                  >
+                    Get in touch
+                  </Button>
                   <Link
-                    to={"https://www.linkedin.com/in/muhafdalmaulanasaid/"}
+                    to={
+                      "https://drive.google.com/file/d/1Ca8LDcX20HbUTSyV69Guv5o3l3SMlW4C/view?usp=sharing"
+                    }
                     target="_blank"
                   >
-                    <Image
-                      _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-                      ml={"10px"}
-                      src="linked.png"
-                      w={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
-                      h={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
-                    ></Image>
-                  </Link>
-                  <Link
-                    to={"https://www.instagram.com/afdalmaulanaaa/"}
-                    target="_blank"
-                  >
-                    <Image
-                      _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-                      ml={"10px"}
-                      src="instagram.png"
-                      w={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
-                      h={{ base: "35px", md: "40px", lg: "80px", xl: "100px" }}
-                    ></Image>
+                    <Button
+                      mt={{ base: "10px", lg: "50px" }}
+                      ml={{ base: "5px", md: "20px", lg: "30px" }}
+                      w={{ base: "120px", lg: "200px" }}
+                      h={{ base: "20px", lg: "50px" }}
+                      fontSize={{ base: "6px", lg: "16px" }}
+                      leftIcon={<AiOutlineFileSearch />}
+                      borderRadius={{ base: "5px", lg: "10px" }}
+                      fontFamily={"montserrat"}
+                      bgColor={"black"}
+                      variant={""}
+                      color={"white"}
+                    >
+                      Curriculum Vitae
+                    </Button>
                   </Link>
                 </Flex>
-              </section>
-              <Button
-                mt={{ base: "10px", lg: "50px" }}
-                w={{ base: "85px", lg: "200px" }}
-                h={{ base: "20px", lg: "50px" }}
-                onClick={onOpen}
-                fontSize={{ base: "6px", lg: "16px" }}
-                fontFamily={"montserrat"}
-                leftIcon={<HiOutlineMail />}
-                borderRadius={{ base: "5px", lg: "10px" }}
-                bgColor={"black"}
-                variant={""}
-                color={"white"}
-              >
-                Get in touch
-              </Button>
-              <Link
-                to={
-                  "https://drive.google.com/file/d/1i9q4CWWO8n00DGjAZg2xBdma8vo7ETJs/view?usp=drive_link"
-                }
-                target="_blank"
-              >
-                <Button
-                  mt={{ base: "10px", lg: "50px" }}
-                  ml={{ base: "5px", md: "20px", lg: "30px" }}
-                  w={{ base: "120px", lg: "200px" }}
-                  h={{ base: "20px", lg: "50px" }}
-                  fontSize={{ base: "6px", lg: "16px" }}
-                  leftIcon={<AiOutlineFileSearch />}
-                  borderRadius={{ base: "5px", lg: "10px" }}
-                  fontFamily={"montserrat"}
-                  bgColor={"black"}
-                  variant={""}
-                  color={"white"}
-                >
-                  Curriculum Vitae
-                </Button>
-              </Link>
+              </Fade>
+
               <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent bgColor={"#435B66"} color={"white"}>
@@ -173,7 +218,9 @@ export default function Banner() {
                 </ModalContent>
               </Modal>
             </Box>
-            <ProfilePic />
+            <Fade delay={3000}>
+              <ProfilePic />
+            </Fade>
           </Flex>
         </Stack>
       </Box>
