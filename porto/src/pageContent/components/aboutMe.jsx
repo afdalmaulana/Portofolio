@@ -20,7 +20,7 @@ export default function AboutMe() {
         bgColor={"#FFFBF5"}
         // h={{ base: "800px", md: "550px", lg: "750px", xl: "850px" }}
       >
-        <Box px={"40px"} py={"50px"} fontFamily={"montserrat"}>
+        <Box px={"100px"} py={"100px"} fontFamily={"montserrat"}>
           <Fade direction="up" cascade={true} triggerOnce={true}>
             <Text
               color={"black"}
@@ -55,16 +55,16 @@ export default function AboutMe() {
               </Text>
             </Box>
           </Fade>
+          <Text
+            id="about"
+            color={"#60574c"}
+            // color={"white"}
+            fontSize={{ base: "24px", md: "24px", lg: "40px" }}
+            mt={{ base: "40px", md: "48px", lg: "64px" }}
+          >
+            Skills
+          </Text>
           <Fade cascade={true} triggerOnce={true}>
-            <Text
-              id="about"
-              color={"#60574c"}
-              // color={"white"}
-              fontSize={{ base: "24px", md: "24px", lg: "40px" }}
-              mt={{ base: "40px", md: "48px", lg: "64px" }}
-            >
-              Skills
-            </Text>
             <Skills />
           </Fade>
         </Box>

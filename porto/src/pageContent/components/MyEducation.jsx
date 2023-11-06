@@ -14,24 +14,23 @@ export default function MyEducation() {
         bgColor={"#292e33"}
         id="education"
         py={"60px"}
-        px={"40px"}
+        px={"100px"}
         maxW={"100%"}
         fontFamily={"montserrat"}
       >
         {/* "#292e33" */}
-        <Stack
-          // ml={{ base: "30px", lg: "100px" }}
-          w={"100%"}
-          // mr={{ base: 10, md: 100, lg: 100 }}
-        >
-          <Flex justifyContent={"space-between"} className="education">
+        <Stack w={"100%"}>
+          <Flex
+            className="education"
+            flexDirection={{ sm: "column", lg: "row" }}
+            justifyContent={"space-between"}
+          >
             <Fade direction="down" cascade={true} triggerOnce={true}>
-              <Box>
+              <Box w={"100%"}>
                 <Text
                   color={"#E9B785"}
                   fontFamily={"bitter"}
                   fontSize={{ base: "24px" }}
-                  // mt={{ base: "50px", md: "50px", lg: "80px" }}
                 >
                   Education
                 </Text>
@@ -66,7 +65,7 @@ export default function MyEducation() {
                   </Text>
                 </Stack>
               </Box>
-              <Box mt={{ sm: "24px", lg: "0px" }}>
+              <Box w={"100%"} mt={{ sm: "24px", lg: "0px" }}>
                 <Text color={"#E9B785"} fontSize={"24px"} fontFamily={"bitter"}>
                   Bootcamp
                 </Text>

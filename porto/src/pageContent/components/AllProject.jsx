@@ -26,9 +26,7 @@ export default function AllProject() {
   return (
     <>
       <Box bgColor={"#FFFBF5"} px={"20px"}>
-        <Box
-        // px={"20px"}
-        >
+        <Box px={"100px"}>
           <Text
             color={"black"}
             fontSize={{ sm: "24px", md: "48px", lg: "64px" }}
@@ -46,30 +44,24 @@ export default function AllProject() {
             w={"100%"}
             gap={"10px"}
           >
-            <Box maxW={{ lg: "520px" }}>
+            <Box maxW={{ lg: "420px" }}>
               <Project />
             </Box>
-            <Box maxW={{ lg: "520px" }}>
+            <Box maxW={{ lg: "420px" }}>
               <Project2 />
             </Box>
-            <Box maxW={{ lg: "520px" }}>
+            <Box maxW={{ lg: "420px" }}>
               <Project5 />
             </Box>
-            <Box maxW={{ lg: "520px" }}>
+            <Box maxW={{ lg: "420px" }}>
               <Project4 />
             </Box>
-            <Box maxW={{ lg: "520px" }}>
+            <Box maxW={{ lg: "420px" }}>
               <Project3 />
             </Box>
-            <Box maxW={{ lg: "520px" }}>
+            <Box maxW={{ lg: "420px" }}>
               <Project6 />
             </Box>
-            {/* <Project />
-            <Project2 /> */}
-            {/* <Project5 />
-            <Project4 />
-            <Project3 />
-            <Project6 /> */}
           </Flex>
           <Box color={"black"} position="relative" padding="10">
             <Divider />
@@ -79,7 +71,7 @@ export default function AllProject() {
                 variant={""}
                 onClick={() => toProject()}
               >
-                View All Project
+                View All Project On Github
               </Button>
             </AbsoluteCenter>
           </Box>
