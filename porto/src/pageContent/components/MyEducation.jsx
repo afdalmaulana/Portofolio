@@ -61,7 +61,7 @@ export default function MyEducation() {
                     mt={{ base: "0px", md: "10px", lg: "20px" }}
                     color={"white"}
                   >
-                    2017 - 2023 Informatics Engineering
+                    2017 - 2022 Informatics Engineering
                   </Text>
                 </Stack>
               </Box>
