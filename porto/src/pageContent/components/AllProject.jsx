@@ -25,41 +25,65 @@ export default function AllProject() {
   };
   return (
     <>
-      <Box bgColor={"#FFFBF5"}>
-        <Stack px={65} align={"center"}>
-          <Box>
-            <Text
-              color={"black"}
-              fontSize={{ sm: "24px", md: "48px", lg: "64px" }}
-              mt={"50px"}
-              fontFamily={"bitter"}
-              id="project"
-            >
-              My Project
-            </Text>
-            {/* <HeroBanner /> */}
-            <Flex mt={"20px"} wrap={"wrap"} gap={3}>
+      <Box bgColor={"#FFFBF5"} px={"20px"}>
+        <Box
+        // px={"20px"}
+        >
+          <Text
+            color={"black"}
+            fontSize={{ sm: "24px", md: "48px", lg: "64px" }}
+            mt={"50px"}
+            fontFamily={"bitter"}
+            id="project"
+          >
+            My Project
+          </Text>
+          {/* <HeroBanner /> */}
+          <Flex
+            mt={"20px"}
+            justifyContent={"space-around"}
+            wrap={"wrap"}
+            w={"100%"}
+            gap={"10px"}
+          >
+            <Box maxW={{ lg: "520px" }}>
               <Project />
-              <Project2 />
-              <Project5 />
-              <Project4 />
-              <Project3 />
-              <Project6 />
-            </Flex>
-            <Box color={"black"} position="relative" padding="10">
-              <Divider />
-              <AbsoluteCenter bgColor={"#FFFBF5"} px="4">
-                <Button
-                  bgColor={"#FFFBF5"}
-                  variant={""}
-                  onClick={() => toProject()}
-                >
-                  View All Project
-                </Button>
-              </AbsoluteCenter>
             </Box>
+            <Box maxW={{ lg: "520px" }}>
+              <Project2 />
+            </Box>
+            <Box maxW={{ lg: "520px" }}>
+              <Project5 />
+            </Box>
+            <Box maxW={{ lg: "520px" }}>
+              <Project4 />
+            </Box>
+            <Box maxW={{ lg: "520px" }}>
+              <Project3 />
+            </Box>
+            <Box maxW={{ lg: "520px" }}>
+              <Project6 />
+            </Box>
+            {/* <Project />
+            <Project2 /> */}
+            {/* <Project5 />
+            <Project4 />
+            <Project3 />
+            <Project6 /> */}
+          </Flex>
+          <Box color={"black"} position="relative" padding="10">
+            <Divider />
+            <AbsoluteCenter bgColor={"#FFFBF5"} px="4">
+              <Button
+                bgColor={"#FFFBF5"}
+                variant={""}
+                onClick={() => toProject()}
+              >
+                View All Project
+              </Button>
+            </AbsoluteCenter>
           </Box>
-        </Stack>
+        </Box>
       </Box>
     </>
   );

@@ -31,8 +31,6 @@ export default function Project4() {
         <Box
           onMouseEnter={() => setMuncul(true)}
           onMouseLeave={() => setMuncul(false)}
-          w="500px"
-          h={"300px"}
           overflow="hidden"
           variant="outline"
         >
@@ -48,7 +46,7 @@ export default function Project4() {
                 >
                   <Box
                     position="absolute"
-                    px={5}
+                    px={"2"}
                     py={5}
                     align="justify"
                     color={"white"}

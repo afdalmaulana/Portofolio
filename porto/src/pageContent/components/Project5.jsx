@@ -33,8 +33,6 @@ export default function Project5() {
           onMouseEnter={() => setMuncul(true)}
           onMouseLeave={() => setMuncul(false)}
           // maxW={"1240px"}
-          w="500px"
-          h={"300px"}
           overflow="hidden"
           variant="outline"
         >
@@ -53,7 +51,7 @@ export default function Project5() {
                 >
                   <Box
                     position="absolute"
-                    px={5}
+                    px={"2"}
                     py={5}
                     align="justify"
                     color={"white"}

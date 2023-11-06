@@ -14,7 +14,7 @@ export default function MyEducation() {
         bgColor={"#292e33"}
         id="education"
         py={"60px"}
-        px={"100px"}
+        px={"40px"}
         maxW={"100%"}
         fontFamily={"montserrat"}
       >
@@ -66,7 +66,7 @@ export default function MyEducation() {
                   </Text>
                 </Stack>
               </Box>
-              <Box mr={{ lg: "80px" }}>
+              <Box mt={{ sm: "24px", lg: "0px" }}>
                 <Text color={"#E9B785"} fontSize={"24px"} fontFamily={"bitter"}>
                   Bootcamp
                 </Text>
