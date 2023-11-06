@@ -33,6 +33,7 @@ export default function Motto() {
               color={"white"}
               // ml={{ base: "30px", md: "40px", lg: "80px" }}
               // mr={{ base: "30px", md: "80px", lg: "60px" }}
+              maxW={"500px"}
             >
               <Text
                 fontSize={{ base: "12px", md: "24px", lg: "40px" }}
@@ -62,6 +63,7 @@ export default function Motto() {
               // mr={{ base: "30px", md: "80px", lg: "0px" }}
               mt={{ base: "10px", md: "20px", lg: "0px" }}
               color={"white"}
+              maxW={"500px"}
             >
               <Text
                 fontSize={{ base: "12px", md: "24px", lg: "40px" }}
@@ -93,6 +95,7 @@ export default function Motto() {
               // mr={{ base: "30px", md: "80px", lg: "20px" }}
               mt={{ base: "10px", md: "20px", lg: "0px" }}
               color={"white"}
+              maxW={"500px"}
             >
               <Text
                 fontSize={{ base: "12px", md: "24px", lg: "40px" }}
@@ -106,7 +109,6 @@ export default function Motto() {
                 align={"justify"}
                 fontSize={{ base: "8px", md: "16px", lg: "14px" }}
                 mt={{ sm: "0px", md: "10px", lg: "16px" }}
-                mr={{ sm: "", lg: "40px" }}
                 fontFamily={"montserrat"}
               >
                 The discipline in time helped me optimize productivity and
