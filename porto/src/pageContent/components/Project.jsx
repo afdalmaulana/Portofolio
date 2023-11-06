@@ -51,7 +51,7 @@ export default function Project() {
                   <Box
                     position="absolute"
                     px={"2"}
-                    py={5}
+                    py={"4"}
                     align="justify"
                     color={"white"}
                     alignItems="center"
@@ -61,7 +61,7 @@ export default function Project() {
                     transition="opacity 0.3s ease-in-out"
                   >
                     <Stack>
-                      <Text fontSize={"15px"}>
+                      <Text fontSize={"12px"}>
                         This project is an example of a website for reading
                         articles or blogs. The reading of the articles contained
                         in this website is data originating from the Purwadhika

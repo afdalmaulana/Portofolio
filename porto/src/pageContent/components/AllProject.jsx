@@ -26,11 +26,14 @@ export default function AllProject() {
   return (
     <>
       <Box bgColor={"#FFFBF5"} px={"20px"}>
-        <Box px={"100px"}>
+        <Box
+          px={{ base: "30px", sm: "30px", lg: "100px" }}
+          py={{ base: "20px", sm: "20px", lg: "100px" }}
+        >
           <Text
             color={"black"}
             fontSize={{ sm: "24px", md: "48px", lg: "64px" }}
-            mt={"50px"}
+            mt={"24px"}
             fontFamily={"bitter"}
             id="project"
           >

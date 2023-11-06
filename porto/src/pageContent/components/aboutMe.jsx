@@ -20,7 +20,11 @@ export default function AboutMe() {
         bgColor={"#FFFBF5"}
         // h={{ base: "800px", md: "550px", lg: "750px", xl: "850px" }}
       >
-        <Box px={"100px"} py={"100px"} fontFamily={"montserrat"}>
+        <Box
+          px={{ base: "30px", sm: "30px", lg: "100px" }}
+          py={{ base: "20px", sm: "20px", lg: "100px" }}
+          fontFamily={"montserrat"}
+        >
           <Fade direction="up" cascade={true} triggerOnce={true}>
             <Text
               color={"black"}

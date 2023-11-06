@@ -52,7 +52,7 @@ export default function Project6() {
                   <Box
                     position="absolute"
                     px={"2"}
-                    py={5}
+                    py={"4"}
                     align="justify"
                     color={"white"}
                     alignItems="center"

@@ -48,7 +48,7 @@ export default function Project3() {
                   <Box
                     position="absolute"
                     px={"2"}
-                    py={5}
+                    py={"4"}
                     align="justify"
                     color={"white"}
                     alignItems="center"
@@ -58,7 +58,7 @@ export default function Project3() {
                     transition="opacity 0.3s ease-in-out"
                   >
                     <Stack>
-                      <Text fontSize={"15px"}>
+                      <Text fontSize={"12px"}>
                         This project is fundamental javascript making a
                         stopwatch
                       </Text>

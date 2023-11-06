@@ -5,27 +5,34 @@ export default function Motto() {
     <>
       <Box
         bgColor={"#292e33"}
-        maxW={"100%"}
-        h={{ base: "", md: "600px", lg: "600px" }}
+        // bgColor={"red"}
+        // maxW={"100%"}
+        w={"100%"}
+        px={{ base: "30px", sm: "30px", lg: "100px" }}
+        py={{ base: "20px", sm: "20px", lg: "100px" }}
+        // h={{ base: "", md: "600px", lg: "600px" }}
         className="strength"
       >
         <Box>
           <Stack color={"#E9B785"}>
             <Text
-              ml={{ base: "30px", md: "40px", lg: "100px" }}
               fontSize={{ base: "16px", md: "24px", lg: "40px" }}
-              mt={{ base: "30px", md: "40px", lg: "80px" }}
               fontFamily={"bitter"}
             >
               My Strength
             </Text>
           </Stack>
-          <Flex className="kekuatan" justify={"space-around"}>
+          <Flex
+            className="kekuatan"
+            justify={"space-around"}
+            flexDirection={{ sm: "column", lg: "row" }}
+            gap={"24px"}
+          >
             <Box
-              w={{ sm: "150px", md: "800px", lg: "550px" }}
+              // w={{ sm: "150px", md: "800px", lg: "550px" }}
               color={"white"}
-              ml={{ base: "30px", md: "40px", lg: "80px" }}
-              mr={{ base: "30px", md: "80px", lg: "60px" }}
+              // ml={{ base: "30px", md: "40px", lg: "80px" }}
+              // mr={{ base: "30px", md: "80px", lg: "60px" }}
             >
               <Text
                 fontSize={{ base: "12px", md: "24px", lg: "40px" }}
@@ -50,9 +57,9 @@ export default function Motto() {
               </Text>
             </Box>
             <Box
-              w={{ sm: "150px", md: "800px", lg: "550px" }}
-              ml={{ base: "30px", md: "40px", lg: "-32px" }}
-              mr={{ base: "30px", md: "80px", lg: "0px" }}
+              // w={{ sm: "150px", md: "800px", lg: "550px" }}
+              // ml={{ base: "30px", md: "40px", lg: "-32px" }}
+              // mr={{ base: "30px", md: "80px", lg: "0px" }}
               mt={{ base: "10px", md: "20px", lg: "0px" }}
               color={"white"}
             >
@@ -81,9 +88,9 @@ export default function Motto() {
               </Text>
             </Box>
             <Box
-              w={{ sm: "150px", md: "800px", lg: "550px" }}
-              ml={{ base: "30px", md: "40px", lg: "30px" }}
-              mr={{ base: "30px", md: "80px", lg: "20px" }}
+              // w={{ sm: "150px", md: "800px", lg: "550px" }}
+              // ml={{ base: "30px", md: "40px", lg: "30px" }}
+              // mr={{ base: "30px", md: "80px", lg: "20px" }}
               mt={{ base: "10px", md: "20px", lg: "0px" }}
               color={"white"}
             >

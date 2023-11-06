@@ -47,7 +47,7 @@ export default function Project4() {
                   <Box
                     position="absolute"
                     px={"2"}
-                    py={5}
+                    py={"4"}
                     align="justify"
                     color={"white"}
                     alignItems="center"
@@ -57,7 +57,6 @@ export default function Project4() {
                     transition="opacity 0.3s ease-in-out"
                   >
                     <Stack>
-                      <Text>Simple Calculator</Text>
                       <Text fontSize={"15px"}>
                         This project is fundamental javascript making a simple
                         calculator
