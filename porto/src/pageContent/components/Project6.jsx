@@ -5,11 +5,13 @@ import {
   Card,
   CardBody,
   CardFooter,
+  Center,
   Collapse,
   Divider,
   Flex,
   Heading,
   Image,
+  Spinner,
   Stack,
   Text,
   useMediaQuery,
@@ -19,7 +21,7 @@ import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 // import { Button } from "react-scroll";
 
-export default function Project2() {
+export default function Project6() {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
   const [muncul, setMuncul] = useState(false);
@@ -30,13 +32,14 @@ export default function Project2() {
         <Box
           onMouseEnter={() => setMuncul(true)}
           onMouseLeave={() => setMuncul(false)}
+          // maxW={"1240px"}
           w="500px"
           h={"300px"}
           overflow="hidden"
           variant="outline"
         >
           <Link
-            to={"https://github.com/afdalmaulana/AbsenceEmployee"}
+            to={"https://miniproject--goldenbook.netlify.app/"}
             target="_blank"
           >
             <Box boxShadow={"lg"}>
@@ -62,10 +65,8 @@ export default function Project2() {
                   >
                     <Stack>
                       <Text fontSize={"15px"}>
-                        This project is making absense for employee that can
-                        clock in and clock out for work. Admin can set amount of
-                        employee for month, if employee clock in but not clock
-                        out, the employee have deduction 1/2 from amount.
+                        This project is making cashier on restaurant or lounge.
+                        This project has two roles, cashier and admin.
                       </Text>
                       <Text>Framework : React.Js</Text>
                       <Text>Chakra UI</Text>
@@ -83,7 +84,7 @@ export default function Project2() {
                     transition="opacity 0.3s ease-in-out"
                     fontWeight={"bold"}
                   >
-                    Attendence Employee
+                    Cashier
                   </Text>
                   <Box
                     bgGradient="linear(to-t, blackAlpha.800, whiteAlpha.100)"
@@ -99,7 +100,7 @@ export default function Project2() {
                     transition="opacity 0.3s ease-in-out"
                     opacity={muncul ? "0.2" : 1}
                     bgColor={"black"}
-                    src="absense.png"
+                    src="eight.png"
                     w="100%"
                     h="100%"
                     zIndex="0"
@@ -110,61 +111,6 @@ export default function Project2() {
           </Link>
         </Box>
       </Fade>
-      {/* <Box mt={"32px"}>
-        <Stack>
-          <Fade cascade={true} triggerOnce={true}>
-            <Card
-              maxW={"1240px"}
-              overflow="hidden"
-              variant="outline"
-              borderRadius={"20px"}
-            >
-              <Flex className="pro">
-                <CardBody>
-                  <Heading size="md">Attendence Employee</Heading>
-                  <Stack mt="6" spacing="3">
-                    <Collapse startingHeight={20} in={show}>
-                      <Text
-                        align={"justify"}
-                        fontSize={{ base: "8px", lg: "12px" }}
-                      >
-                        This project is making absense for employee that can
-                        clock in and clock out for work. Admin can set amount of
-                        employee for month, if employee clock in but not clock
-                        out, the employee have deduction 1/2 from amount
-                      </Text>
-                    </Collapse>
-                    <Button
-                      w={"10px"}
-                      ml={"5px"}
-                      size="sm"
-                      onClick={handleToggle}
-                      mt="1rem"
-                      bgColor={""}
-                      variant={""}
-                    >
-                      {show ? "Less" : "More"}
-                    </Button>
-                    <Divider />
-                    <Text>Framework : React.Js</Text>
-                    <Text>Component style : Chakra UI</Text>
-                  </Stack>
-                </CardBody>
-                <Box
-                  maxH={{ base: "100px", md: "150px", lg: "450px" }}
-                  minH={{ base: "100px", md: "400px", lg: "320px" }}
-                  w={{ md: "800px", lg: "600px" }}
-                  backgroundPosition="center"
-                  backgroundRepeat="no-repeat"
-                  backgroundSize="cover"
-                  borderRadius="lg"
-                  backgroundImage={"absense.png"}
-                ></Box>
-              </Flex>
-            </Card>
-          </Fade>
-        </Stack>
-      </Box> */}
     </>
   );
 }

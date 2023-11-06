@@ -30,8 +30,6 @@ export default function Navbar() {
         // bgColor={"#222831"}
         w={"100%"}
         h={{ base: "60px" }}
-        // h={"200px"}
-        // shadow={"lg"}
         id={"navvbar"}
         position={"fixed"}
         top={0}

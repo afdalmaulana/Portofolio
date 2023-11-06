@@ -14,6 +14,9 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
+    .pro{
+        flex-direction: column;
+    }
     /* .myskill{
         display: flex;
         flex-direction: column;

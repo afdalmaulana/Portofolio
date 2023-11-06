@@ -7,10 +7,12 @@ import {
   CardFooter,
   Collapse,
   Divider,
+  Flex,
   Heading,
   Image,
   Stack,
   Text,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
@@ -20,64 +22,92 @@ import { Link } from "react-router-dom";
 export default function Project3() {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
+  const [muncul, setMuncul] = useState(false);
+  const [lcdIsSmall] = useMediaQuery(`(max-width : 768px)`);
+
   return (
     <>
-      <Box>
-        <Stack>
-          <Fade direction="left" cascade triggerOnce={true}>
-            <Card
-              fontFamily={"montserrat"}
-              _hover={{ transform: "scale(1.1)", cursor: "pointer" }}
-              w={{ md: "320px", lg: "350px" }}
-              maxh={{ base: "200px", md: "200px", lg: "480px" }}
-              ml={{ base: "0px", md: "24px", lg: "40px" }}
-              mt={{ base: "20px", lg: "40px" }}
-              bgColor={"white"}
-              borderRadius={"20px"}
-            >
-              <CardBody>
+      <Fade cascade={true} triggerOnce={true}>
+        <Box
+          onMouseEnter={() => setMuncul(true)}
+          onMouseLeave={() => setMuncul(false)}
+          w="500px"
+          h={"300px"}
+          overflow="hidden"
+          variant="outline"
+        >
+          <Link to={"/timer"} target="_blank">
+            <Box boxShadow={"lg"}>
+              <Box>
                 <Box
-                  height={{ base: "100px", md: "150px", lg: "200px" }}
+                  bgColor="black"
                   position="relative"
-                  backgroundPosition="center"
-                  backgroundRepeat="no-repeat"
-                  backgroundSize="cover"
-                  borderRadius="lg"
-                  backgroundImage={"timer.png"}
-                ></Box>
-                <Stack mt="6" spacing="3">
-                  <Collapse startingHeight={20} in={show}>
-                    <Heading size="md">Stopwatch</Heading>
-                    This project is fundamental javascript making a stopwatch
-                  </Collapse>
-                  <Button
-                    w={"10px"}
-                    ml={"5px"}
-                    size="sm"
-                    onClick={handleToggle}
-                    mt="1rem"
-                    bgColor={""}
-                    variant={""}
+                  w="100%"
+                  h="100%"
+                  fontFamily={"montserrat"}
+                  borderRadius={"10px"}
+                >
+                  <Box
+                    position="absolute"
+                    px={5}
+                    py={5}
+                    align="justify"
+                    color={"white"}
+                    alignItems="center"
+                    justifyContent="center"
+                    zIndex="1"
+                    opacity={muncul ? 1 : 0}
+                    transition="opacity 0.3s ease-in-out"
                   >
-                    {show ? "Less" : "More"}
-                  </Button>
-                </Stack>
-              </CardBody>
-              <CardFooter>
-                <Link to={"/timer"} target="_blank">
-                  <Button
-                    bgColor={"#d8ccbe"}
-                    variant={"ghost"}
-                    borderRadius={"10px"}
+                    <Stack>
+                      <Text fontSize={"15px"}>
+                        This project is fundamental javascript making a
+                        stopwatch
+                      </Text>
+                      <Text>Framework : React.Js</Text>
+                      <Text>Chakra UI</Text>
+                    </Stack>
+                  </Box>
+                  <Text
+                    color={"white"}
+                    zIndex={1000}
+                    position="absolute"
+                    bottom={"0"}
+                    px={"20px"}
+                    py={"10px"}
+                    fontSize={"3xl"}
+                    opacity={muncul ? 0 : 1}
+                    transition="opacity 0.3s ease-in-out"
+                    fontWeight={"bold"}
                   >
-                    View Project
-                  </Button>
-                </Link>
-              </CardFooter>
-            </Card>
-          </Fade>
-        </Stack>
-      </Box>
+                    Stopwatch
+                  </Text>
+                  <Box
+                    bgGradient="linear(to-t, blackAlpha.800, whiteAlpha.100)"
+                    w="100%"
+                    h="30%"
+                    fontFamily={"montserrat"}
+                    position="absolute"
+                    bottom={0}
+                    opacity={muncul ? 0 : 1} // Use 1 for full opacity
+                    zIndex={1}
+                  ></Box>
+                  <Image
+                    transition="opacity 0.3s ease-in-out"
+                    opacity={muncul ? "0.2" : 1}
+                    bgColor={"black"}
+                    src="timer.png"
+                    boxSize="100%"
+                    maxW="100%"
+                    maxH="100%"
+                    zIndex="0"
+                  />
+                </Box>
+              </Box>
+            </Box>
+          </Link>
+        </Box>
+      </Fade>
     </>
   );
 }

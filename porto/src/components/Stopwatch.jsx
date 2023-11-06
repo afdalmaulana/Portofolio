@@ -50,16 +50,16 @@ export default function Stopwatch() {
         </Button></Link>
         </Box> */}
       <Box
-        w={"400px"}
-        h={"300px"}
+        w={"100%"}
+        h={"900px"}
         bgGradient={"linear(to-r, #0CCDA3, blue.500)"}
-        m={"200px auto"}
+        mt={"60px"}
         borderRadius={"10px"}
       >
         <Stack>
           <Flex justify={"center"}>
             <Text
-              fontSize={"4xl"}
+              fontSize={"6xl"}
               color={"whiteAlpha.800"}
               fontFamily={"cursive"}
               pt={"10px"}
@@ -67,7 +67,7 @@ export default function Stopwatch() {
               Stopwatch
             </Text>
           </Flex>
-          <Flex justify={"center"}>
+          <Flex justify={"center"} mt={"100px"}>
             <Text
               fontSize={"6xl"}
               fontFamily={"monospace"}
@@ -77,7 +77,7 @@ export default function Stopwatch() {
               {formatTime(timer)}
             </Text>
           </Flex>
-          <Flex pt={"40px"} justify={"center"}>
+          <Flex pt={"40px"} justify={"center"} mt={"100px"}>
             <HStack spacing={"24px"}>
               <Button
                 colorScheme="whatsapp"

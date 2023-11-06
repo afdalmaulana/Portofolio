@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Landing/Home';
 import Stopwatch from './components/Stopwatch';
 import Calculator from './components/Calculator';
+import PageProject from './pageContent/components/PageProject';
 
 // import "./style/main.css"
 
@@ -17,6 +18,7 @@ function App() {
     <Route path='/' element={<Home/>}></Route>
     <Route path='/timer' element={<Stopwatch/>}></Route>
     <Route path='/calculator' element={<Calculator/>}></Route>
+    <Route path='/pageProject' element={<PageProject/>}></Route>
     </Routes>
     </>
   );

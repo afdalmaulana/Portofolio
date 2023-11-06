@@ -1,4 +1,4 @@
-import { Box, Flex, Stack, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, Stack, Text } from "@chakra-ui/react";
 
 import { Fade, Slide } from "react-awesome-reveal";
 import MyProject from "../../navbar/components/myProject";
@@ -13,15 +13,16 @@ export default function MyEducation() {
       <Box
         bgColor={"#292e33"}
         id="education"
-        h={{ base: "1900px", md: "1050px", lg: "1200px" }}
+        py={"60px"}
+        px={"100px"}
         maxW={"100%"}
         fontFamily={"montserrat"}
       >
         {/* "#292e33" */}
         <Stack
-          ml={{ base: "30px", lg: "100px" }}
-          w={{ sm: "350px", md: "800px", lg: "1240px" }}
-          mr={{ base: 10, md: 100, lg: 100 }}
+          // ml={{ base: "30px", lg: "100px" }}
+          w={"100%"}
+          // mr={{ base: 10, md: 100, lg: 100 }}
         >
           <Flex justifyContent={"space-between"} className="education">
             <Fade direction="down" cascade={true} triggerOnce={true}>
@@ -30,7 +31,7 @@ export default function MyEducation() {
                   color={"#E9B785"}
                   fontFamily={"bitter"}
                   fontSize={{ base: "24px" }}
-                  mt={{ base: "50px", md: "50px", lg: "80px" }}
+                  // mt={{ base: "50px", md: "50px", lg: "80px" }}
                 >
                   Education
                 </Text>
@@ -66,12 +67,7 @@ export default function MyEducation() {
                 </Stack>
               </Box>
               <Box mr={{ lg: "80px" }}>
-                <Text
-                  color={"#E9B785"}
-                  fontSize={"24px"}
-                  mt={{ base: "50px", md: "50px", lg: "80px" }}
-                  fontFamily={"bitter"}
-                >
+                <Text color={"#E9B785"} fontSize={"24px"} fontFamily={"bitter"}>
                   Bootcamp
                 </Text>
                 <Text
@@ -107,34 +103,6 @@ export default function MyEducation() {
               </Box>
             </Fade>
           </Flex>
-        </Stack>
-        <Stack id="project">
-          <Text
-            ml={{ base: "30px", lg: "100px" }}
-            color={"#E9B785"}
-            fontSize={{ sm: "24px", md: "48px", lg: "64px" }}
-            mt={{ base: "100px", lg: "400px" }}
-            fontFamily={"bitter"}
-          >
-            My Project
-          </Text>
-
-          <Box
-            w={{ sm: "350px", md: "800px", lg: "1240px" }}
-            mr={{ base: "30px", md: "80px", lg: "0px" }}
-            ml={{ base: "30px", md: "30px", lg: "160px" }}
-            h={{ base: "150px", md: "800px", lg: "600px" }}
-          >
-            <Flex
-              // ml={{ base: "30px", lg: "100px" }}
-              wrap={"wrap"}
-              className="listProject"
-            >
-              <Project />
-              <Project3 />
-              <Project4 />
-            </Flex>
-          </Box>
         </Stack>
       </Box>
     </>

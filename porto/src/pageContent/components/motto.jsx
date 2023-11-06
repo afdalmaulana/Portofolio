@@ -22,7 +22,7 @@ export default function Motto() {
           </Stack>
           <Flex className="kekuatan" justify={"space-around"}>
             <Box
-              w={{ sm: "150px", md: "900px", lg: "550px" }}
+              w={{ sm: "150px", md: "800px", lg: "550px" }}
               color={"white"}
               ml={{ base: "30px", md: "40px", lg: "80px" }}
               mr={{ base: "30px", md: "80px", lg: "60px" }}
@@ -50,7 +50,7 @@ export default function Motto() {
               </Text>
             </Box>
             <Box
-              w={{ sm: "150px", md: "900px", lg: "550px" }}
+              w={{ sm: "150px", md: "800px", lg: "550px" }}
               ml={{ base: "30px", md: "40px", lg: "-32px" }}
               mr={{ base: "30px", md: "80px", lg: "0px" }}
               mt={{ base: "10px", md: "20px", lg: "0px" }}
@@ -81,7 +81,7 @@ export default function Motto() {
               </Text>
             </Box>
             <Box
-              w={{ sm: "150px", md: "900px", lg: "550px" }}
+              w={{ sm: "150px", md: "800px", lg: "550px" }}
               ml={{ base: "30px", md: "40px", lg: "30px" }}
               mr={{ base: "30px", md: "80px", lg: "20px" }}
               mt={{ base: "10px", md: "20px", lg: "0px" }}

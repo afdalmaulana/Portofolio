@@ -16,13 +16,12 @@ export default function Skills() {
     <>
       <Box
         className="myskill"
-        maxW={"100%"}
         // w={{ base: "350px", md: "650px", lg: "850px", xl: "1230px" }}
         // h={{ base: "20px", md: "50px", lg: "80px", xl: "150px" }}
       >
         <Box
           mr={{ base: 10, md: 100, lg: 100 }}
-          w={{ sm: "100px", md: "900px", lg: "1240px" }}
+          w={{ sm: "100px", md: "830px", lg: "1240px" }}
           ml={{ base: "30px", lg: "100px" }}
         >
           <Flex
