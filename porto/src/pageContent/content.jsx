@@ -18,8 +18,7 @@ export default function Content() {
       <AboutMe />
       <MyEducation />
       <AllProject />
-
-      {/* <WorkExperience /> */}
+      <WorkExperience />
       <Footer />
     </>
   );

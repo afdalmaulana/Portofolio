@@ -18,7 +18,6 @@ export default function MyEducation() {
         maxW={"100%"}
         fontFamily={"montserrat"}
       >
-        {/* "#292e33" */}
         <Stack w={"100%"}>
           <Flex
             className="education"

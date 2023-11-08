@@ -13,14 +13,16 @@ export default function WorkExperience() {
     <>
       <Box
         // bgColor={"#04293A"}
-        bgColor={"#073b4c"}
-        h={{ base: "1200px", md: "500px", lg: "1800px" }}
+        bgColor={"#292e33"}
+        px={{ base: "30px", sm: "30px", lg: "100px" }}
+        py={{ base: "20px", sm: "20px", lg: "100px" }}
+        // h={{ base: "1200px", md: "500px", lg: "1800px" }}
         fontFamily={"montserrat"}
       >
-        <Stack ml={{ base: "30px", md: "80px", lg: "100px" }}>
+        <Stack w={"100%"}>
           <Box>
             <Text
-              mt={{ base: "20px", sm: "200px", md: "250px", lg: "1020px" }}
+              // mt={{ base: "20px", sm: "200px", md: "250px", lg: "1020px" }}
               fontSize={{ sm: "24px", md: "24px", lg: "32px" }}
               color={"#E9B785"}
               fontFamily={"bitter"}
@@ -31,6 +33,7 @@ export default function WorkExperience() {
             <Flex
               justifyContent={"space-between"}
               className="myexpe"
+              flexDirection={{ sm: "column", lg: "row" }}
               // id="experience"
             >
               <Fade direction="down" cascade={true} triggerOnce={true}>
