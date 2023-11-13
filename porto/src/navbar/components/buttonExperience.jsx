@@ -1,6 +1,7 @@
 import { Box, Button } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 
+import { IoMdArrowDropdown } from "react-icons/io";
 export default function ButtonExpe() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function ButtonExpe() {
             w={{ base: "0px", md: "75px", lg: "100px" }}
             fontSize={{ base: "0px", md: "12px", lg: "15px" }}
             color={"white"}
+            rightIcon={<IoMdArrowDropdown />}
           >
             Experience
           </Button>

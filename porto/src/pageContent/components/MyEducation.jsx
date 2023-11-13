@@ -11,10 +11,11 @@ export default function MyEducation() {
   return (
     <>
       <Box
-        bgColor={"#292e33"}
+        // bgColor={"#292e33"}
+        bgColor={"#073b4c"}
         id="education"
         px={{ base: "30px", sm: "30px", lg: "100px" }}
-        py={{ base: "20px", sm: "20px", lg: "100px" }}
+        py={{ base: "20px", sm: "20px", lg: "150px" }}
         maxW={"100%"}
         fontFamily={"montserrat"}
       >

@@ -7,15 +7,17 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import { Fade } from "react-awesome-reveal";
+import AboutMe from "../../navbar/components/buttonAboutMe";
 
 export default function WorkExperience() {
   return (
     <>
       <Box
         // bgColor={"#04293A"}
-        bgColor={"#292e33"}
+        // bgColor={"#292e33"}
+        bgColor={"#073b4c"}
         px={{ base: "30px", sm: "30px", lg: "100px" }}
-        py={{ base: "20px", sm: "20px", lg: "100px" }}
+        py={{ base: "20px", sm: "20px", lg: "80px" }}
         // h={{ base: "1200px", md: "500px", lg: "1800px" }}
         fontFamily={"montserrat"}
       >
@@ -23,10 +25,11 @@ export default function WorkExperience() {
           <Box>
             <Text
               // mt={{ base: "20px", sm: "200px", md: "250px", lg: "1020px" }}
-              fontSize={{ sm: "24px", md: "24px", lg: "32px" }}
+              fontSize={{ sm: "24px", md: "24px", lg: "36px" }}
               color={"#E9B785"}
               fontFamily={"bitter"}
               id="experience"
+              fontWeight={"lg"}
             >
               EXPERIENCE
             </Text>
@@ -153,6 +156,19 @@ export default function WorkExperience() {
             </Flex>
           </Box>
         </Stack>
+        <Box
+          position={{ base: "static", sm: "absolute" }}
+          right={{ base: "0px", sm: "10px", lg: "200px" }}
+          bottom={{ base: "20px", sm: "20px", lg: "100px" }}
+          // style={{
+          //   position: "absolute",
+          //   right: 0,
+          //   bottom: 0,
+          //   backgroundColor: "red",
+          // }}
+        >
+          <AboutMe />
+        </Box>
       </Box>
     </>
   );

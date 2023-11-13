@@ -3,6 +3,7 @@ import Hamburger from "./hamburger";
 import { Link } from "react-scroll";
 
 import "../../style/main.css";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function Education() {
   return (
@@ -12,9 +13,12 @@ export default function Education() {
           <Button
             mt={"10px"}
             mr={"10px"}
-            colorScheme="green"
+            // colorScheme="green"
+            variant={""}
+            color={"white"}
             w={{ base: "0px", md: "75px", lg: "100px" }}
             fontSize={{ base: "0px", md: "12px", lg: "15px" }}
+            rightIcon={<IoMdArrowDropdown />}
           >
             Education
           </Button>

@@ -25,7 +25,7 @@ export default function ProfilePic() {
           // bgColor={"red"}
           w={{ base: "140px", md: "300px", lg: "450px" }}
           // w={"250px"}
-          h={{ base: "240px", md: "480px", lg: "720px" }}
+          h={{ base: "240px", md: "480px", lg: "732px" }}
           // w={{ base: "25px", md: "75px", lg: "100px" }}
           opacity={200}
           // borderRadius={{ base: "100px", md: "100px", lg: "150px" }}

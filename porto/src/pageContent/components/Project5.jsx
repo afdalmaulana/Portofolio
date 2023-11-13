@@ -37,7 +37,7 @@ export default function Project5() {
           variant="outline"
         >
           <Link
-            to={"https://miniproject--goldenbook.netlify.app/"}
+            to={"https://jcwd011001.purwadhikabootcamp.com/"}
             target="_blank"
           >
             <Box boxShadow={"lg"}>
@@ -63,14 +63,11 @@ export default function Project5() {
                   >
                     <Stack>
                       <Text fontSize={"15px"}>
-                        This project is an example of a website for reading
-                        articles or blogs. The reading of the articles contained
-                        in this website is data originating from the Purwadhika
-                        Backend. Feature in this project is a carousel banner,
-                        pagination, like button, bookmarks, register, login,
-                        change profile (username, email, password, profile
-                        picture, forget and reset password user), create blog,
-                        sort blog.
+                        Grocereasy is an online grocery web app that simplifies
+                        the shopping experience. With several store locations
+                        offering the same products, users are provided with
+                        recommendations to receive services from the store
+                        nearest to them.
                       </Text>
                       <Text>Framework : React.Js</Text>
                       <Text>Chakra UI</Text>

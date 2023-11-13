@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   ButtonGroup,
   Flex,
   Spacer,
@@ -12,8 +13,30 @@ import AboutMe from "./components/buttonAboutMe";
 import MyProject from "./components/myProject";
 import Hamburger from "./components/hamburger";
 import ButtonExpe from "./components/buttonExperience";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+  const toAbout = () => {
+    navigate("/abouut");
+  };
+  const toMyProject = () => {
+    navigate("/AllProject");
+  };
+  const toHomes = () => {
+    navigate("/");
+  };
+  const [isAboutActive, setIsAboutActive] = useState(false);
+  const [isHomeActive, setIsHomeActive] = useState(false);
+  const [isProjectActive, setIsProjectActive] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    setIsAboutActive(location.pathname === "/abouut");
+    setIsHomeActive(location.pathname === "/");
+    setIsProjectActive(location.pathname === "/AllProject");
+  }, [location.pathname]);
+
   const navbar = document.getElementById("navvbar");
   window.onscroll = () => {
     if (window.scrollY > 300) {
@@ -45,11 +68,42 @@ export default function Navbar() {
                 className="dekstop"
                 justify={"space-between"}
                 fontFamily={"montserrat"}
+                px={"100px"}
               >
-                <AboutMe />
-                <Education />
-                <MyProject />
-                <ButtonExpe />
+                <Button
+                  onClick={() => toHomes()}
+                  mt={"10px"}
+                  // mr={"10px"}
+                  colorScheme="white"
+                  borderBottom={isHomeActive ? "2px" : "none"}
+                  borderColor={isHomeActive ? "white" : "transparent"}
+                >
+                  Home
+                </Button>
+                <Button
+                  onClick={() => toAbout()}
+                  mt={"10px"}
+                  // mr={"10px"}
+                  colorScheme="white"
+                  borderBottom={isAboutActive ? "2px" : "none"}
+                  borderColor={isAboutActive ? "white" : "transparent"}
+                >
+                  About
+                </Button>
+                <Button
+                  onClick={() => toMyProject()}
+                  mt={"10px"}
+                  // mr={"10px"}
+                  colorScheme="white"
+                  borderBottom={isProjectActive ? "2px" : "none"}
+                  borderColor={isProjectActive ? "white" : "transparent"}
+                >
+                  Project
+                </Button>
+                {/* <AboutMe /> */}
+                {/* <Education /> */}
+                {/* <MyProject /> */}
+                {/* <ButtonExpe /> */}
               </Flex>
             ) : (
               <Box className="mobile">
