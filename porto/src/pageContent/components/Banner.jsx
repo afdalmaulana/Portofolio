@@ -30,8 +30,8 @@ export default function Banner() {
   return (
     <>
       <motion.div
-        initial={{ x: "100%", width: "100%" }}
-        animate={{ x: "0%", width: "100%" }}
+        initial={{ y: "-100%", width: "100%" }}
+        animate={{ y: "0%", width: "100%" }}
         // exit={{ x: ["0%", "100%"], width: ["0%", "100%"] }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
         // initial={{ width: 0 }}

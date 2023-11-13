@@ -12,12 +12,12 @@ export default function Education() {
         <Box className="education">
           <Button
             mt={"10px"}
-            mr={"10px"}
+            // mr={"10px"}
             // colorScheme="green"
             variant={""}
             color={"white"}
-            w={{ base: "0px", md: "75px", lg: "100px" }}
-            fontSize={{ base: "0px", md: "12px", lg: "15px" }}
+            // w={{ base: "0px", md: "75px", lg: "100px" }}
+            fontSize={{ base: "12px", md: "12px", lg: "15px" }}
             rightIcon={<IoMdArrowDropdown />}
           >
             Education

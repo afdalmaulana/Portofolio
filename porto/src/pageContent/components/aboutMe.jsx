@@ -41,7 +41,7 @@ export default function AboutMe() {
         >
           <Box
             px={{ base: "30px", sm: "30px", lg: "100px" }}
-            py={{ base: "20px", sm: "20px", lg: "100px" }}
+            py={{ base: "50px", sm: "50px", lg: "100px" }}
             fontFamily={"montserrat"}
           >
             <ButtonGroup>

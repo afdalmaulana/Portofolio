@@ -41,6 +41,7 @@ export default function AllProject() {
           // bgColor={"#FFFBF5"}
           bgColor={"#073b4c"}
           px={"20px"}
+          py={{ sm: "80px", lg: "0px" }}
         >
           <Box
             px={{ base: "30px", sm: "30px", lg: "100px" }}
@@ -63,22 +64,22 @@ export default function AllProject() {
               w={"100%"}
               gap={"10px"}
             >
-              <Box maxW={{ lg: "420px" }}>
+              <Box maxW={{ lg: "550px" }}>
                 <Project />
               </Box>
-              <Box maxW={{ lg: "420px" }}>
+              <Box maxW={{ lg: "550px" }}>
                 <Project2 />
               </Box>
-              <Box maxW={{ lg: "420px" }}>
+              <Box maxW={{ lg: "550px" }}>
                 <Project5 />
               </Box>
-              <Box maxW={{ lg: "420px" }}>
+              <Box maxW={{ lg: "550px" }}>
                 <Project4 />
               </Box>
-              <Box maxW={{ lg: "420px" }}>
+              <Box maxW={{ lg: "550px" }}>
                 <Project3 />
               </Box>
-              <Box maxW={{ lg: "420px" }}>
+              <Box maxW={{ lg: "550px" }}>
                 <Project6 />
               </Box>
             </Flex>
