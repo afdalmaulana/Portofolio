@@ -14,39 +14,20 @@ import Project3 from "./Project3";
 import { Fade } from "react-awesome-reveal";
 import Project5 from "./Project5";
 import Project4 from "./Project4";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import HeroBanner from "./HeroBanner";
 import Project6 from "./Project6";
 
 import { motion } from "framer-motion";
+import AnimateTransaction from "../../components/AnimateTransaction";
 
-export default function AllProject() {
+function AllProject() {
   const navigate = useNavigate();
   const toProject = () => {
-    navigate("/pageProject");
+    navigate("/https://github.com/afdalmaulana?tab=repositories");
   };
   return (
     <>
-      {/* <motion.div
-        initial={{ x: "100%", width: "100%", background: "#000" }}
-        animate={{ x: "0%", width: "100%", background: "#000" }}
-        // exit={{ x: ["0%", "100%"], width: ["0%", "100%"] }}
-        exit={{
-          x: "-100%", // Pindahkan elemen keluar dari layar ke kiri saat keluar
-          width: "100%",
-          backgroundColor: "black", // Ganti latar belakang menjadi hitam saat keluar
-          transition: { duration: 0.8, ease: "easeInOut" },
-        }}
-        // initial={{ width: 0 }}
-        // animate={{ width: "100%" }}
-        // exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
-        // transition={{ duration: 0.5, ease: "easeInOut" }}
-      > */}
-      {/* <motion.div
-          initial={{ x: "100%", width: "100%" }}
-          animate={{ x: "0%", width: "0%" }}
-          transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
-        /> */}
       <Box
         // bgColor={"#FFFBF5"}
         bgColor={"#073b4c"}
@@ -96,18 +77,24 @@ export default function AllProject() {
           <Box color={"black"} position="relative" padding="10">
             <Divider />
             <AbsoluteCenter bgColor={"#FFFBF5"} px="4">
-              <Button
-                bgColor={"#FFFBF5"}
-                variant={""}
-                onClick={() => toProject()}
+              <Link
+                to="https://github.com/afdalmaulana?tab=repositories"
+                target="_blank"
               >
-                View All Project On Github
-              </Button>
+                <Button
+                  bgColor={"#FFFBF5"}
+                  variant={""}
+                  // onClick={() => toProject()}
+                >
+                  View All Project On Github
+                </Button>
+              </Link>
             </AbsoluteCenter>
           </Box>
         </Box>
       </Box>
-      {/* </motion.div> */}
     </>
   );
 }
+
+export default AnimateTransaction(AllProject);

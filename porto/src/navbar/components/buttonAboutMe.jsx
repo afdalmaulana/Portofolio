@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import "../../style/main.css";
 import { AiOutlineArrowUp } from "react-icons/ai";
 
-export default function AboutMe() {
+export default function ButtonAboutMe() {
   const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
   return (
     <>

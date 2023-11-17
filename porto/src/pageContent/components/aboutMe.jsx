@@ -23,43 +23,6 @@ import AnimateTransaction from "../../components/AnimateTransaction";
 const About = () => {
   return (
     <>
-      {/* <motion.div
-        initial={{ x: "100%", width: "100%", background: "black" }}
-        animate={{ x: "0%", width: "100%", background: "black" }}
-        // exit={{ x: ["0%", "100%"], width: ["0%", "100%"] }}
-        // exit={{
-        //   x: "-100%", // Pindahkan elemen keluar dari layar ke kiri saat keluar
-        //   width: "100%",
-        //   background: "black", // Ganti latar belakang menjadi hitam saat keluar
-        //   transition: { duration: 0.8, ease: "easeInOut" },
-        // }}
-        style={{ background: "black" }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
-        // exit={{ scaleX: 0 }}
-        // initial={{ width: 0 }}
-        // animate={{ width: "100%" }}
-        // exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
-        // transition={{ duration: 0.8, ease: "easeInOut" }}
-      > */}
-      {/* <motion.div
-          initial={{ x: "100%", width: "100%", background: "black" }}
-          animate={{ x: "0%", width: "100%", background: "black" }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
-          exit={{
-            x: "-100%", // Pindahkan elemen keluar dari layar ke kiri saat keluar
-            width: "100%",
-            background: "black", // Ganti latar belakang menjadi hitam saat keluar
-            transition: { duration: 0.8, ease: "easeInOut" },
-          }}
-          style={{ background: "black" }}
-        > */}
-      {/* <motion.div
-            // className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-dark"
-            initial={{ x: "100%", width: "100%", background: "yellow" }}
-            animate={{ x: "0%", width: "100%", background: "yellow" }}
-            transition={{ delay: 0.4, duration: 0.8, ease: "easeInOut" }}
-            style={{ background: "black" }}
-          > */}
       <Box
         bgColor={"#073b4c"}
         id="about"
@@ -135,9 +98,6 @@ const About = () => {
       </Box>
       <MyEducation />
       <WorkExperience />
-      {/* </motion.div>
-        </motion.div>
-      // </motion.div> */}
     </>
   );
 };

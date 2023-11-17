@@ -20,10 +20,24 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import "../../style/main.css";
 import AboutMe from "./buttonAboutMe";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 export default function Hamburger() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
+  const navigate = useNavigate();
+  const toAbout = () => {
+    navigate("/about");
+    onClose();
+  };
+  const toMyProject = () => {
+    navigate("/AllProject");
+    onClose();
+  };
+  const toHomes = () => {
+    navigate("/");
+    onClose();
+  };
   return (
     <>
       <Box className="hamburger">
@@ -48,68 +62,33 @@ export default function Hamburger() {
           <DrawerBody>
             <Flex mt={"20px"}>
               <Box>
-                <Link to="about" smooth={true}>
-                  <Button
-                    mt={"10px"}
-                    ml={"0px"}
-                    mr={"5px"}
-                    colorScheme="#292e33"
-                    w={"80px"}
-                    fontSize={"15px"}
-                    color={"black"}
-                    onClick={onClose}
-                  >
-                    About
-                  </Button>
-                </Link>
+                <Button
+                  onClick={() => toHomes()}
+                  mt={"10px"}
+                  // mr={"10px"}
+                  colorScheme="white"
+                >
+                  Home
+                </Button>
+                <Button
+                  onClick={() => toAbout()}
+                  mt={"10px"}
+                  // mr={"10px"}
+                  colorScheme="white"
+                >
+                  About
+                </Button>
               </Box>
-              <Link to="education" smooth={true}>
-                <Box>
-                  <Button
-                    mt={"10px"}
-                    mr={"5px"}
-                    colorScheme="#292e33"
-                    // colorScheme="cyan"
-                    w={"80px"}
-                    fontSize={"15px"}
-                    color={"black"}
-                    onClick={onClose}
-                  >
-                    Education
-                  </Button>
-                </Box>
-              </Link>
-              <Link to="project" smooth={true}>
-                <Box>
-                  <Button
-                    mt={"10px"}
-                    mr={"5px"}
-                    colorScheme="#292e33"
-                    // colorScheme="cyan"s
-                    w={"80px"}
-                    fontSize={"15px"}
-                    color={"black"}
-                    onClick={onClose}
-                  >
-                    Project
-                  </Button>
-                </Box>
-              </Link>
-              <Link to="experience" smooth={true}>
-                <Box>
-                  <Button
-                    mt={"10px"}
-                    mr={"10px"}
-                    colorScheme="#292e33"
-                    w={"80px"}
-                    fontSize={"15px"}
-                    color={"black"}
-                    onClick={onClose}
-                  >
-                    Experience
-                  </Button>
-                </Box>
-              </Link>
+              <Box>
+                <Button
+                  onClick={() => toMyProject()}
+                  mt={"10px"}
+                  // mr={"10px"}
+                  colorScheme="white"
+                >
+                  Project
+                </Button>
+              </Box>
             </Flex>
           </DrawerBody>
         </DrawerContent>

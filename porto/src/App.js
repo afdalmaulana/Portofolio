@@ -23,7 +23,7 @@ function App() {
     <AnimatePresence mode='wait'>
     <Routes location={location} key={location.pathname}>
       <Route path='/' element={<Home />} /> 
-      <Route path='/abouut' element={<AboutMe />} />
+      <Route path='/about' element={<AboutMe />} />
       <Route path='/timer' element={<Stopwatch />} />
       <Route path='/calculator' element={<Calculator />} />
       <Route path='/pageProject' element={<PageProject />} />

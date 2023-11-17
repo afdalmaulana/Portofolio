@@ -19,7 +19,7 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
   const navigate = useNavigate();
   const toAbout = () => {
-    navigate("/abouut");
+    navigate("/about");
   };
   const toMyProject = () => {
     navigate("/AllProject");
