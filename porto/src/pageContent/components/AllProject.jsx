@@ -27,77 +27,87 @@ export default function AllProject() {
   };
   return (
     <>
-      <motion.div
-        initial={{ x: "100%", width: "100%" }}
-        animate={{ x: "0%", width: "100%" }}
+      {/* <motion.div
+        initial={{ x: "100%", width: "100%", background: "#000" }}
+        animate={{ x: "0%", width: "100%", background: "#000" }}
         // exit={{ x: ["0%", "100%"], width: ["0%", "100%"] }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        exit={{
+          x: "-100%", // Pindahkan elemen keluar dari layar ke kiri saat keluar
+          width: "100%",
+          backgroundColor: "black", // Ganti latar belakang menjadi hitam saat keluar
+          transition: { duration: 0.8, ease: "easeInOut" },
+        }}
         // initial={{ width: 0 }}
         // animate={{ width: "100%" }}
         // exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
         // transition={{ duration: 0.5, ease: "easeInOut" }}
+      > */}
+      {/* <motion.div
+          initial={{ x: "100%", width: "100%" }}
+          animate={{ x: "0%", width: "0%" }}
+          transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
+        /> */}
+      <Box
+        // bgColor={"#FFFBF5"}
+        bgColor={"#073b4c"}
+        px={"20px"}
+        py={{ sm: "80px", lg: "0px" }}
       >
         <Box
-          // bgColor={"#FFFBF5"}
-          bgColor={"#073b4c"}
-          px={"20px"}
-          py={{ sm: "80px", lg: "0px" }}
+          px={{ base: "30px", sm: "30px", lg: "100px" }}
+          py={{ base: "20px", sm: "20px", lg: "100px" }}
         >
-          <Box
-            px={{ base: "30px", sm: "30px", lg: "100px" }}
-            py={{ base: "20px", sm: "20px", lg: "100px" }}
+          <Text
+            color={"white"}
+            fontSize={{ sm: "24px", md: "48px", lg: "64px" }}
+            mt={"24px"}
+            fontFamily={"bitter"}
+            id="project"
           >
-            <Text
-              color={"white"}
-              fontSize={{ sm: "24px", md: "48px", lg: "64px" }}
-              mt={"24px"}
-              fontFamily={"bitter"}
-              id="project"
-            >
-              My Project
-            </Text>
-            {/* <HeroBanner /> */}
-            <Flex
-              mt={"20px"}
-              justifyContent={"space-around"}
-              wrap={"wrap"}
-              w={"100%"}
-              gap={"10px"}
-            >
-              <Box maxW={{ lg: "550px" }}>
-                <Project />
-              </Box>
-              <Box maxW={{ lg: "550px" }}>
-                <Project2 />
-              </Box>
-              <Box maxW={{ lg: "550px" }}>
-                <Project5 />
-              </Box>
-              <Box maxW={{ lg: "550px" }}>
-                <Project4 />
-              </Box>
-              <Box maxW={{ lg: "550px" }}>
-                <Project3 />
-              </Box>
-              <Box maxW={{ lg: "550px" }}>
-                <Project6 />
-              </Box>
-            </Flex>
-            <Box color={"black"} position="relative" padding="10">
-              <Divider />
-              <AbsoluteCenter bgColor={"#FFFBF5"} px="4">
-                <Button
-                  bgColor={"#FFFBF5"}
-                  variant={""}
-                  onClick={() => toProject()}
-                >
-                  View All Project On Github
-                </Button>
-              </AbsoluteCenter>
+            My Project
+          </Text>
+          {/* <HeroBanner /> */}
+          <Flex
+            mt={"20px"}
+            justifyContent={"space-around"}
+            wrap={"wrap"}
+            w={"100%"}
+            gap={"10px"}
+          >
+            <Box maxW={{ lg: "550px" }}>
+              <Project />
             </Box>
+            <Box maxW={{ lg: "550px" }}>
+              <Project2 />
+            </Box>
+            <Box maxW={{ lg: "550px" }}>
+              <Project5 />
+            </Box>
+            <Box maxW={{ lg: "550px" }}>
+              <Project4 />
+            </Box>
+            <Box maxW={{ lg: "550px" }}>
+              <Project3 />
+            </Box>
+            <Box maxW={{ lg: "550px" }}>
+              <Project6 />
+            </Box>
+          </Flex>
+          <Box color={"black"} position="relative" padding="10">
+            <Divider />
+            <AbsoluteCenter bgColor={"#FFFBF5"} px="4">
+              <Button
+                bgColor={"#FFFBF5"}
+                variant={""}
+                onClick={() => toProject()}
+              >
+                View All Project On Github
+              </Button>
+            </AbsoluteCenter>
           </Box>
         </Box>
-      </motion.div>
+      </Box>
+      {/* </motion.div> */}
     </>
   );
 }

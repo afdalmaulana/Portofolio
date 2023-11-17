@@ -37,14 +37,14 @@ export default function Navbar() {
     setIsProjectActive(location.pathname === "/AllProject");
   }, [location.pathname]);
 
-  const navbar = document.getElementById("navvbar");
-  window.onscroll = () => {
-    if (window.scrollY > 300) {
-      navbar.classList.add("nav-active");
-    } else {
-      navbar.classList.remove("nav-active");
-    }
-  };
+  // const navbar = document.getElementById("navvbar");
+  // window.onscroll = () => {
+  //   if (window.scrollY > 300) {
+  //     navbar.classList.add("nav-active");
+  //   } else {
+  //     navbar.classList.remove("nav-active");
+  //   }
+  // };
   const [isLargerThanMD] = useMediaQuery("(min-width: 48em)");
   return (
     <>
@@ -57,7 +57,7 @@ export default function Navbar() {
         position={"fixed"}
         top={0}
         zIndex={10}
-        className={"nav-active"}
+        // className={"nav-active"}
       >
         <Flex>
           <Title />

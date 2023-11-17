@@ -1,27 +1,41 @@
-import { Box } from "@chakra-ui/react";
-import { Route, Routes, useLocation } from 'react-router-dom';
-import Home from "../Landing/Home";
-import Stopwatch from "./Stopwatch";
-import Calculator from "./Calculator";
-import PageProject from "../pageContent/components/PageProject";
+import { motion } from 'framer-motion';
 
-import {AnimatePresence} from 'framer-motion'
-import AboutMe from "../pageContent/components/aboutMe";
-import AllProject from "../pageContent/components/AllProject";
+const AnimateTransaction = (MyComponent) => {
+  return () => (
+    <>
+      <MyComponent />
+      <motion.div
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 0 }}
+        exit={{ scaleX: 1 }}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100vh',
+          background: 'black',
+          transformOrigin: 'right',
+        }}
+      />
+      <motion.div
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0 }}
+        exit={{ scaleX: 0 }}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100vh',
+          background: 'black',
+          transformOrigin: 'left',
+        }}
+      />
+    </>
+  );
+};
 
-export default function AnimateTransaction(){
-    const location = useLocation()
-return(
-    <AnimatePresence>
-
-    <Routes location={location} key={location.pathname}>
-      <Route path='/' element={<Home />} />
-      <Route path='/abouut' element={<AboutMe />} />
-      <Route path='/timer' element={<Stopwatch />} />
-      <Route path='/calculator' element={<Calculator />} />
-      <Route path='/pageProject' element={<PageProject />} />
-      <Route path='/AllProject' element={<AllProject />} />
-    </Routes>
-    </AnimatePresence>
-)
-}
+export default AnimateTransaction;
