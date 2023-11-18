@@ -30,8 +30,8 @@ function App() {
       <Route path='/pageProject' element={<PageProject />} />
       <Route path='/AllProject' element={<AllProject />} />
     </Routes>
-    <Footer/>
     </AnimatePresence>
+    <Footer/>
     {/* <AnimateTransaction/> */}
     </>
   );

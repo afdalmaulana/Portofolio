@@ -16,7 +16,7 @@ export default function Certi() {
             gap={"20px"}
           >
             {/* <Text>Microsoft Technology Associate</Text> */}
-            <Image src="certi_mta.png" h={"240px"} />
+            <Image src="certi_mta.png" h={"260px"} />
             <Image src="certi2.png" h={"240px"} />
             {/* <Box
               mt={{ base: "10px", lg: "20px" }}

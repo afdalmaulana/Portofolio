@@ -27,10 +27,11 @@ export default function ProfilePic() {
           {/* ini border paling luar */}
           <Box
             position={"absolute"}
-            w={{ base: "390px", lg: "400px" }}
+            w={{ base: "300px", lg: "400px" }}
             top={{ lg: "200px" }}
-            left={{ base: "10px", lg: "770px" }}
-            h={{ base: "520px", lg: "505px" }}
+            bottom={{ base: "130px", lg: "0px" }}
+            left={{ base: "60px", lg: "770px" }}
+            h={{ base: "320px", lg: "505px" }}
             border={"10px"}
             borderColor={"black"}
             borderBottomColor={"#D8C5B2"}
@@ -42,10 +43,10 @@ export default function ProfilePic() {
           {/* ini border paling kedua */}
           <Box
             position={"absolute"}
-            w={{ base: "372px", lg: "380px" }}
-            top={{ base: "380px", lg: "210px" }}
-            left={{ base: "19px", lg: "780px" }}
-            h={{ base: "505px", lg: "487px" }}
+            w={{ base: "280px", lg: "380px" }}
+            top={{ base: "510px", lg: "210px" }}
+            left={{ base: "70px", lg: "780px" }}
+            h={{ base: "300px", lg: "487px" }}
             border={"10px"}
             borderColor={"#D8C5B2"}
             borderLeftColor={"black"}
@@ -56,11 +57,13 @@ export default function ProfilePic() {
 
           {/* ini border paling ketiga */}
           <Box
+            display={{ base: "none", lg: "flex" }}
             position={"absolute"}
             w={{ base: "390px", lg: "360px" }}
             top={{ lg: "220px" }}
             left={{ base: "10px", lg: "790px" }}
             h={{ base: "520px", lg: "470px" }}
+            bottom={{ base: "150px", lg: "0px" }}
             border={"10px"}
             borderColor={"#D8C5B2"}
             borderLeftColor={"black"}
@@ -78,6 +81,28 @@ export default function ProfilePic() {
             // boxSize="100%"
             objectFit="cover"
           />
+          <Image
+            display={{ lg: "none" }}
+            position={"absolute"}
+            zIndex={20000}
+            src="afdaaal.png"
+            left={20}
+            bottom={"150px"}
+            h={"400px"}
+            // boxSize="100%"
+            objectFit="cover"
+          />
+          <Image
+            display={{ lg: "none" }}
+            position="absolute"
+            left={20}
+            bottom={"150px"}
+            h={"400px"}
+            zIndex={0} // Atur zIndex lebih rendah dari border
+            src="afdaaal.png"
+            objectFit="cover"
+            // other props...
+          />
 
           {/* <Image
             display={{ lg: "none" }}
@@ -92,40 +117,8 @@ export default function ProfilePic() {
           /> */}
 
           {/* image ini tampil saat layar kecil */}
-          <Image
-            display={{ lg: "none" }}
-            position="absolute"
-            left={2}
-            bottom={"20px"}
-            h={"600px"}
-            zIndex={0} // Atur zIndex lebih rendah dari border
-            src="afdaaal.png"
-            objectFit="cover"
-            // other props...
-          />
         </Box>
       </Fade>
-      {/* <Box px={"20px"} border={"1px"} borderColor={"black"}>
-        <Box
-          className="foto"
-          mt={{ base: "10px", sm: "0px", md: "0px", lg: "0px" }}
-          // mt={{ base: "30px", md: "40px", lg: "0px" }}
-          // ml={{ base: "10px", md: "120px", lg: "120px" }}
-          // bgColor={"red"}
-          w={{ base: "140px", md: "300px", lg: "450px" }}
-          // w={"250px"}
-          h={{ base: "240px", md: "480px", lg: "500px" }}
-          // w={{ base: "25px", md: "75px", lg: "100px" }}
-          opacity={200}
-          // borderRadius={{ base: "100px", md: "100px", lg: "150px" }}
-          backgroundImage={"afdaaal.png"}
-          // _hover={{ transform: "scale(1.1)" }}
-          // backgroundSize={"cover"}
-          backgroundSize="contain" // Sesuaikan dengan 'contain' atau 'cover' sesuai kebutuhan
-          backgroundRepeat="no-repeat"
-          backgroundPosition="center"
-        ></Box>
-      </Box> */}
       {/* <Avatar src="afdal.jpg" size={"xl"} /> */}
     </>
   );
