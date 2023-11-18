@@ -2,6 +2,7 @@ import {
   Avatar,
   Box,
   Button,
+  Center,
   Image,
   Stack,
   Text,
@@ -26,6 +27,7 @@ export default function ProfilePic() {
         >
           {/* ini border paling luar */}
           <Box
+            display={{ base: "none", lg: "flex" }}
             position={"absolute"}
             w={{ base: "300px", lg: "400px" }}
             top={{ lg: "200px" }}
@@ -42,6 +44,7 @@ export default function ProfilePic() {
 
           {/* ini border paling kedua */}
           <Box
+            display={{ base: "none", lg: "flex" }}
             position={"absolute"}
             w={{ base: "280px", lg: "380px" }}
             top={{ base: "510px", lg: "210px" }}
@@ -49,7 +52,7 @@ export default function ProfilePic() {
             h={{ base: "300px", lg: "487px" }}
             border={"10px"}
             borderColor={"#D8C5B2"}
-            borderLeftColor={"yellow"}
+            borderLeftColor={"black"}
             borderTopColor={"black"}
             borderStyle={"dotted"}
             zIndex={1}
@@ -81,28 +84,30 @@ export default function ProfilePic() {
             // boxSize="100%"
             objectFit="cover"
           />
-          <Image
-            display={{ lg: "none" }}
-            position={"absolute"}
-            zIndex={20000}
-            src="afdaaal.png"
-            left={20}
-            bottom={"110px"}
-            h={{ base: "340px", lg: "400px" }}
-            // boxSize="100%"
-            objectFit="cover"
-          />
-          <Image
-            display={{ lg: "none" }}
-            position="absolute"
-            left={20}
-            bottom={"110px"}
-            h={{ base: "340px", lg: "400px" }}
-            zIndex={0} // Atur zIndex lebih rendah dari border
-            src="afdaaal.png"
-            objectFit="cover"
-            // other props...
-          />
+          <Center>
+            <Image
+              display={{ lg: "none" }}
+              position={"absolute"}
+              zIndex={20000}
+              src="afdaaal.png"
+              // left={"95px"}
+              bottom={"110px"}
+              h={{ base: "340px", lg: "400px" }}
+              // boxSize="100%"
+              objectFit="cover"
+            />
+            <Image
+              display={{ lg: "none" }}
+              position="absolute"
+              // left={"95px"}
+              bottom={"110px"}
+              h={{ base: "340px", lg: "400px" }}
+              zIndex={0} // Atur zIndex lebih rendah dari border
+              src="afdaaal.png"
+              objectFit="cover"
+              // other props...
+            />
+          </Center>
 
           {/* <Image
             display={{ lg: "none" }}
