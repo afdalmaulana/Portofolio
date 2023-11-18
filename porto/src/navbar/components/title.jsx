@@ -7,8 +7,10 @@ export default function Title() {
       <Link to={"/"}>
         <Box ml={{ base: "10px", lg: "40px" }}>
           <Text
+            py={{ base: "12px", lg: "2px" }}
+            px={{ base: "12px", lg: "2px" }}
             fontSize={{ base: "24px", lg: "36px" }}
-            color={"white"}
+            color={"#D8C5B2"}
             // mt={"5px"}
             fontFamily={"bitter"}
           >

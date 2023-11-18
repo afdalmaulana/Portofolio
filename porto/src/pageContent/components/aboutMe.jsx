@@ -24,7 +24,8 @@ const About = () => {
   return (
     <>
       <Box
-        bgColor={"#073b4c"}
+        // bgColor={"#073b4c"}
+        bgColor={"#292E33"}
         id="about"
         className="aboutme"
         // bgColor={"#FFFBF5"}

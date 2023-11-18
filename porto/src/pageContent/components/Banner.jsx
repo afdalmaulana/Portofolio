@@ -32,7 +32,8 @@ const Banner = () => {
   return (
     <>
       <Box
-        bgColor={"#073b4c"}
+        // bgColor={"#073b4c"}
+        bgColor={"#292E33"}
         h={"100vh"}
         // h={{ base: "250px", md: "480", lg: "720px" }}
         py={"80px"}
@@ -81,13 +82,13 @@ const Banner = () => {
               >
                 <Text
                   fontFamily={"montserrat"}
-                  fontSize={{ base: "24px", sm: "8px", md: "24px", lg: "32px" }}
+                  fontSize={{ base: "22px", sm: "8px", md: "24px", lg: "32px" }}
                 >
                   Junior
                 </Text>
                 <Text
                   fontFamily={"montserrat"}
-                  fontSize={{ base: "24px", sm: "8px", md: "24px", lg: "32px" }}
+                  fontSize={{ base: "22px", sm: "8px", md: "24px", lg: "32px" }}
                 >
                   <Typewriter
                     options={{

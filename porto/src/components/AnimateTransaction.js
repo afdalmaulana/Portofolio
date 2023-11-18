@@ -5,9 +5,9 @@ const AnimateTransaction = (MyComponent) => {
     <>
       <MyComponent />
       <motion.div
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: 0 }}
-        exit={{ scaleX: 1 }}
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 0 }}
+        exit={{ scaleY: 1 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         style={{
           position: 'fixed',
@@ -15,14 +15,14 @@ const AnimateTransaction = (MyComponent) => {
           left: 0,
           width: '100%',
           height: '100vh',
-          background: 'black',
-          transformOrigin: 'right',
+          background: '#D8C5B2',
+          transformOrigin: 'top',
         }}
       />
       <motion.div
-        initial={{ scaleX: 1 }}
-        animate={{ scaleX: 0 }}
-        exit={{ scaleX: 0 }}
+        initial={{ scaleY: 1 }}
+        animate={{ scaleY: 0 }}
+        exit={{ scaleY: 0 }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         style={{
           position: 'fixed',
@@ -30,8 +30,8 @@ const AnimateTransaction = (MyComponent) => {
           left: 0,
           width: '100%',
           height: '100vh',
-          background: 'black',
-          transformOrigin: 'left',
+          background: '#D8C5B2',
+          transformOrigin: 'bottom',
         }}
       />
     </>

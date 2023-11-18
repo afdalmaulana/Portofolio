@@ -32,7 +32,7 @@ export default function Navbar() {
   const [isProjectActive, setIsProjectActive] = useState(false);
   const location = useLocation();
   useEffect(() => {
-    setIsAboutActive(location.pathname === "/abouut");
+    setIsAboutActive(location.pathname === "/about");
     setIsHomeActive(location.pathname === "/");
     setIsProjectActive(location.pathname === "/AllProject");
   }, [location.pathname]);
@@ -49,8 +49,8 @@ export default function Navbar() {
   return (
     <>
       <Box
-        bgColor={"#073b4c"}
-        // bgColor={"#222831"}
+        // bgColor={"#073b4c"}
+        bgColor={"#292E33"}
         w={"100%"}
         h={{ base: "60px" }}
         id={"navvbar"}

@@ -46,7 +46,7 @@ export default function Hamburger() {
           mr={"10px"}
           icon={<GiHamburgerMenu />}
           onClick={onOpen}
-          bgColor={"#073b4c"}
+          bgColor={"#D8C5B2"}
           ref={btnRef}
         ></IconButton>
       </Box>
@@ -57,16 +57,17 @@ export default function Hamburger() {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent bgColor={"#073b4c"} h={"100px"}>
+        <DrawerContent bgColor={"#D8C5B2"} h={"100px"}>
           <DrawerCloseButton />
           <DrawerBody>
-            <Flex mt={"20px"}>
+            <Flex mt={"20px"} justifyContent={"center"}>
               <Box>
                 <Button
                   onClick={() => toHomes()}
                   mt={"10px"}
                   // mr={"10px"}
-                  colorScheme="white"
+                  colorScheme="black"
+                  color={"black"}
                 >
                   Home
                 </Button>
@@ -75,6 +76,7 @@ export default function Hamburger() {
                   mt={"10px"}
                   // mr={"10px"}
                   colorScheme="white"
+                  color={"black"}
                 >
                   About
                 </Button>
@@ -85,6 +87,7 @@ export default function Hamburger() {
                   mt={"10px"}
                   // mr={"10px"}
                   colorScheme="white"
+                  color={"black"}
                 >
                   Project
                 </Button>

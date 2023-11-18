@@ -36,10 +36,7 @@ export default function Project6() {
           overflow="hidden"
           variant="outline"
         >
-          <Link
-            to={"https://miniproject--goldenbook.netlify.app/"}
-            target="_blank"
-          >
+          <Link to={"https://github.com/aryarafid/group8"} target="_blank">
             <Box boxShadow={"lg"}>
               <Box>
                 <Box
@@ -63,8 +60,8 @@ export default function Project6() {
                   >
                     <Stack>
                       <Text fontSize={"15px"}>
-                        This project is making cashier on restaurant or lounge.
-                        This project has two roles, cashier and admin.
+                        This project is making Point Of Sales on restaurant or
+                        lounge. This project has two roles, cashier and admin.
                       </Text>
                       <Text>Framework : React.Js</Text>
                       <Text>Chakra UI</Text>

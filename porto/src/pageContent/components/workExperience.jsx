@@ -15,7 +15,8 @@ export default function WorkExperience() {
       <Box
         // bgColor={"#04293A"}
         // bgColor={"#292e33"}
-        bgColor={"#073b4c"}
+        // bgColor={"#073b4c"}
+        bgColor={"#292E33"}
         px={{ base: "30px", sm: "30px", lg: "100px" }}
         py={{ base: "20px", sm: "20px", lg: "80px" }}
         // h={{ base: "1200px", md: "500px", lg: "1800px" }}
@@ -25,13 +26,13 @@ export default function WorkExperience() {
           <Box>
             <Text
               // mt={{ base: "20px", sm: "200px", md: "250px", lg: "1020px" }}
-              fontSize={{ sm: "24px", md: "24px", lg: "36px" }}
+              fontSize={{ base: "24px", sm: "24px", md: "24px", lg: "36px" }}
               color={"#E9B785"}
               fontFamily={"bitter"}
               id="experience"
               fontWeight={"lg"}
             >
-              EXPERIENCE
+              WORK EXPERIENCE
             </Text>
             <Flex
               justifyContent={"space-between"}

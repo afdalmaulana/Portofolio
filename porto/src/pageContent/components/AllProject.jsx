@@ -30,9 +30,10 @@ function AllProject() {
     <>
       <Box
         // bgColor={"#FFFBF5"}
-        bgColor={"#073b4c"}
+        // bgColor={"#073b4c"}
+        bgColor={"#292E33"}
         px={"20px"}
-        py={{ sm: "80px", lg: "0px" }}
+        py={{ base: "30px", sm: "80px", lg: "0px" }}
       >
         <Box
           px={{ base: "30px", sm: "30px", lg: "100px" }}
