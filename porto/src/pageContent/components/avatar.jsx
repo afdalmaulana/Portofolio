@@ -87,8 +87,8 @@ export default function ProfilePic() {
             zIndex={20000}
             src="afdaaal.png"
             left={20}
-            bottom={"150px"}
-            h={"400px"}
+            bottom={"110px"}
+            h={{ base: "200px", lg: "400px" }}
             // boxSize="100%"
             objectFit="cover"
           />
@@ -96,8 +96,8 @@ export default function ProfilePic() {
             display={{ lg: "none" }}
             position="absolute"
             left={20}
-            bottom={"150px"}
-            h={"400px"}
+            bottom={"110px"}
+            h={{ base: "200px", lg: "400px" }}
             zIndex={0} // Atur zIndex lebih rendah dari border
             src="afdaaal.png"
             objectFit="cover"
