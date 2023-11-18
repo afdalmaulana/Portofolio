@@ -49,7 +49,7 @@ export default function ProfilePic() {
             h={{ base: "300px", lg: "487px" }}
             border={"10px"}
             borderColor={"#D8C5B2"}
-            borderLeftColor={"black"}
+            borderLeftColor={"yellow"}
             borderTopColor={"black"}
             borderStyle={"dotted"}
             zIndex={1}
