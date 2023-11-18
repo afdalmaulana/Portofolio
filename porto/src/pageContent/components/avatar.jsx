@@ -42,10 +42,10 @@ export default function ProfilePic() {
           {/* ini border paling kedua */}
           <Box
             position={"absolute"}
-            w={{ base: "390px", lg: "380px" }}
-            top={{ lg: "210px" }}
-            left={{ base: "10px", lg: "780px" }}
-            h={{ base: "520px", lg: "487px" }}
+            w={{ base: "372px", lg: "380px" }}
+            top={{ base: "380px", lg: "210px" }}
+            left={{ base: "19px", lg: "780px" }}
+            h={{ base: "505px", lg: "487px" }}
             border={"10px"}
             borderColor={"#D8C5B2"}
             borderLeftColor={"black"}
@@ -79,23 +79,25 @@ export default function ProfilePic() {
             objectFit="cover"
           />
 
-          {/* image ini tampil saat layar kecil */}
-          <Image
+          {/* <Image
             display={{ lg: "none" }}
             position={"absolute"}
             left={{ base: "0" }}
             bottom={{ base: "10px" }}
             zIndex={20000}
+            // h={"500px"}
             src="afdaaal.png"
             // boxSize="100%"
             objectFit="cover"
-          />
+          /> */}
 
+          {/* image ini tampil saat layar kecil */}
           <Image
             display={{ lg: "none" }}
             position="absolute"
-            left={0}
-            bottom={"10px"}
+            left={2}
+            bottom={"20px"}
+            h={"600px"}
             zIndex={0} // Atur zIndex lebih rendah dari border
             src="afdaaal.png"
             objectFit="cover"

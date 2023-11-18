@@ -12,6 +12,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import AboutMe from './pageContent/components/aboutMe';
 import AllProject from './pageContent/components/AllProject';
 import { AnimatePresence } from 'framer-motion';
+import Footer from './footer/Footer';
 
 // import "./style/main.css"
 
@@ -29,6 +30,7 @@ function App() {
       <Route path='/pageProject' element={<PageProject />} />
       <Route path='/AllProject' element={<AllProject />} />
     </Routes>
+    <Footer/>
     </AnimatePresence>
     {/* <AnimateTransaction/> */}
     </>

@@ -21,6 +21,7 @@ export default function WorkExperience() {
         py={{ base: "20px", sm: "20px", lg: "80px" }}
         // h={{ base: "1200px", md: "500px", lg: "1800px" }}
         fontFamily={"montserrat"}
+        id="experience"
       >
         <Stack w={"100%"}>
           <Box>
@@ -29,7 +30,6 @@ export default function WorkExperience() {
               fontSize={{ base: "24px", sm: "24px", md: "24px", lg: "36px" }}
               color={"#E9B785"}
               fontFamily={"bitter"}
-              id="experience"
               fontWeight={"lg"}
             >
               WORK EXPERIENCE

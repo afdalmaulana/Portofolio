@@ -14,12 +14,12 @@ export default function Content() {
   return (
     <>
       <Banner />
-      {/* <Motto />
-      <AboutMe />
+      {/* <Motto /> */}
+      {/* <AboutMe />
       <MyEducation />
       <AllProject />
-      <WorkExperience />
-      <Footer /> */}
+      <WorkExperience /> */}
+      {/* <Footer /> */}
     </>
   );
 }

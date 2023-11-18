@@ -1,0 +1,23 @@
+import { Box, Button } from "@chakra-ui/react";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { Link } from "react-scroll";
+
+export default function ButtonCerti() {
+  return (
+    <>
+      <Link to="certif" smooth="true">
+        <Button
+          mt={"10px"}
+          // mr={"10px"}
+          colorScheme="white"
+          // w={{ base: "0px", md: "75px", lg: "100px" }}
+          fontSize={{ base: "12px", md: "12px", lg: "15px" }}
+          color={"white"}
+          rightIcon={<IoMdArrowDropdown />}
+        >
+          Certificate
+        </Button>
+      </Link>
+    </>
+  );
+}

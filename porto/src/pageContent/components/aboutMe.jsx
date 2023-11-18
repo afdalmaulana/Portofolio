@@ -19,6 +19,8 @@ import MyProject from "../../navbar/components/myProject";
 import ButtonExpe from "../../navbar/components/buttonExperience";
 import WorkExperience from "./workExperience";
 import AnimateTransaction from "../../components/AnimateTransaction";
+import Certi from "./Certi";
+import ButtonCerti from "../../navbar/components/ButtonCerti";
 
 const About = () => {
   return (
@@ -40,6 +42,7 @@ const About = () => {
           <ButtonGroup>
             <Education />
             <ButtonExpe />
+            <ButtonCerti />
           </ButtonGroup>
           <Divider py={"5px"} />
           <Fade direction="up" cascade={true} triggerOnce={true}>
@@ -99,6 +102,7 @@ const About = () => {
       </Box>
       <MyEducation />
       <WorkExperience />
+      <Certi />
     </>
   );
 };
