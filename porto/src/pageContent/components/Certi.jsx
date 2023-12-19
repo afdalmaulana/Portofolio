@@ -1,4 +1,5 @@
 import { Box, Flex, Image, Spinner, Stack, Text } from "@chakra-ui/react";
+import ButtonAboutMe from "../../navbar/components/buttonAboutMe";
 
 export default function Certi() {
   return (
@@ -16,29 +17,26 @@ export default function Certi() {
             gap={"20px"}
           >
             {/* <Text>Microsoft Technology Associate</Text> */}
-            <Image src="certi_mta.png" h={"260px"} />
-            <Image src="certi2.png" h={"240px"} />
-            {/* <Box
-              mt={{ base: "10px", lg: "20px" }}
-              bgImage={"certi_mta.png"}
-              backgroundPosition={"center"}
-              backgroundRepeat="no-repeat"
-              backgroundSize="cover"
-              w={"300px"}
-              h={"200px"}
-            ></Box>
-            <Box
-              mt={{ base: "10px", lg: "20px" }}
-              bgImage={"certi2.png"}
-              backgroundPosition={"center"}
-              backgroundRepeat="no-repeat"
-              backgroundSize="cover"
-              w={"300px"}
-              h={"200px"}
-            ></Box> */}
+            <Image src="certi_mta.png" w={"300px"} h={"240px"} />
+            <Image src="certi2.png" w={"300px"} h={"240px"} />
           </Flex>
-          <Text fontSize={"24px"}>Under Maintenance, please wait ...</Text>
+          <Text fontSize={"24px"} mt={"20px"}>
+            Under Maintenance, please wait ...
+          </Text>
           <Spinner size="xl" ml={{ base: "30px" }} />
+          <Box
+            position={{ base: "static", sm: "absolute" }}
+            right={{ base: "0px", sm: "10px", lg: "200px" }}
+            bottom={{ base: "20px", sm: "20px", lg: "100px" }}
+            // style={{
+            //   position: "absolute",
+            //   right: 0,
+            //   bottom: 0,
+            //   backgroundColor: "red",
+            // }}
+          >
+            <ButtonAboutMe />
+          </Box>
         </Box>
       </Box>
     </>

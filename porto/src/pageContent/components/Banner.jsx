@@ -209,7 +209,7 @@ const Banner = () => {
                 </Button>
                 <Link
                   to={
-                    "https://drive.google.com/file/d/1Ca8LDcX20HbUTSyV69Guv5o3l3SMlW4C/view?usp=sharing"
+                    "https://drive.google.com/file/d/1g2RePUCpdplGUnCJ4Sz3jNBtq-ocbhDz/view?usp=drive_link"
                   }
                   target="_blank"
                 >

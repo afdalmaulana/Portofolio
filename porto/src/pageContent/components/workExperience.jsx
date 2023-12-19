@@ -157,19 +157,7 @@ export default function WorkExperience() {
             </Flex>
           </Box>
         </Stack>
-        <Box
-          position={{ base: "static", sm: "absolute" }}
-          right={{ base: "0px", sm: "10px", lg: "200px" }}
-          bottom={{ base: "20px", sm: "20px", lg: "100px" }}
-          // style={{
-          //   position: "absolute",
-          //   right: 0,
-          //   bottom: 0,
-          //   backgroundColor: "red",
-          // }}
-        >
-          <AboutMe />
-        </Box>
+        
       </Box>
     </>
   );

@@ -70,6 +70,7 @@ export default function ProfilePic() {
             border={"10px"}
             borderColor={"#D8C5B2"}
             borderLeftColor={"black"}
+            // borderTop={"none"}
             // borderColor={"yellow"}
             borderStyle={"dotted"}
             borderTopColor={"black"}
